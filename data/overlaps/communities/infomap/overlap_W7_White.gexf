@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-10-05">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="x" type="double" />
+      <attribute id="1" title="y" type="double" />
+      <attribute id="2" title="z" type="double" />
+      <attribute id="3" title="community" type="long" />
+    </attributes>
+    <nodes>
+      <node id="ADFL" label="ADFL">
+        <attvalues>
+          <attvalue for="0" value="54.18" />
+          <attvalue for="1" value="8.48" />
+          <attvalue for="2" value="7.0" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="ADFR" label="ADFR">
+        <attvalues>
+          <attvalue for="0" value="54.63" />
+          <attvalue for="1" value="7.15" />
+          <attvalue for="2" value="-8.88" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="ADLL" label="ADLL">
+        <attvalues>
+          <attvalue for="0" value="59.13" />
+          <attvalue for="1" value="12.05" />
+          <attvalue for="2" value="3.86" />
+          <attvalue for="3" value="6" />
+        </attvalues>
+      </node>
+      <node id="ADLR" label="ADLR">
+        <attvalues>
+          <attvalue for="0" value="58.8" />
+          <attvalue for="1" value="11.38" />
+          <attvalue for="2" value="-6.34" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="AINL" label="AINL">
+        <attvalues>
+          <attvalue for="0" value="68.22" />
+          <attvalue for="1" value="6.62" />
+          <attvalue for="2" value="9.69" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="AINR" label="AINR">
+        <attvalues>
+          <attvalue for="0" value="67.38" />
+          <attvalue for="1" value="7.01" />
+          <attvalue for="2" value="-10.84" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="ASEL" label="ASEL">
+        <attvalues>
+          <attvalue for="0" value="61.3" />
+          <attvalue for="1" value="5.43" />
+          <attvalue for="2" value="8.57" />
+          <attvalue for="3" value="7" />
+        </attvalues>
+      </node>
+      <node id="ASER" label="ASER">
+        <attvalues>
+          <attvalue for="0" value="60.94" />
+          <attvalue for="1" value="5.42" />
+          <attvalue for="2" value="-10.37" />
+          <attvalue for="3" value="8" />
+        </attvalues>
+      </node>
+      <node id="ASHL" label="ASHL">
+        <attvalues>
+          <attvalue for="0" value="58.42" />
+          <attvalue for="1" value="4.21" />
+          <attvalue for="2" value="8.35" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="ASHR" label="ASHR">
+        <attvalues>
+          <attvalue for="0" value="57.83" />
+          <attvalue for="1" value="3.81" />
+          <attvalue for="2" value="-10.2" />
+          <attvalue for="3" value="9" />
+        </attvalues>
+      </node>
+      <node id="ASKL" label="ASKL">
+        <attvalues>
+          <attvalue for="0" value="54.73" />
+          <attvalue for="1" value="12.0" />
+          <attvalue for="2" value="4.44" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="ASKR" label="ASKR">
+        <attvalues>
+          <attvalue for="0" value="54.43" />
+          <attvalue for="1" value="11.18" />
+          <attvalue for="2" value="-6.32" />
+          <attvalue for="3" value="9" />
+        </attvalues>
+      </node>
+      <node id="AUAL" label="AUAL">
+        <attvalues>
+          <attvalue for="0" value="60.91" />
+          <attvalue for="1" value="0.84" />
+          <attvalue for="2" value="8.36" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="AUAR" label="AUAR">
+        <attvalues>
+          <attvalue for="0" value="60.76" />
+          <attvalue for="1" value="0.22" />
+          <attvalue for="2" value="-9.63" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="AVAL" label="AVAL">
+        <attvalues>
+          <attvalue for="0" value="50.2" />
+          <attvalue for="1" value="6.7" />
+          <attvalue for="2" value="8.41" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="AVBL" label="AVBL">
+        <attvalues>
+          <attvalue for="0" value="63.74" />
+          <attvalue for="1" value="5.1" />
+          <attvalue for="2" value="7.12" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="AVBR" label="AVBR">
+        <attvalues>
+          <attvalue for="0" value="62.69" />
+          <attvalue for="1" value="4.83" />
+          <attvalue for="2" value="-9.41" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="AVDR" label="AVDR">
+        <attvalues>
+          <attvalue for="0" value="65.45" />
+          <attvalue for="1" value="5.14" />
+          <attvalue for="2" value="-10.59" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="AVEL" label="AVEL">
+        <attvalues>
+          <attvalue for="0" value="51.08" />
+          <attvalue for="1" value="4.58" />
+          <attvalue for="2" value="5.98" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="AVER" label="AVER">
+        <attvalues>
+          <attvalue for="0" value="52.03" />
+          <attvalue for="1" value="3.63" />
+          <attvalue for="2" value="-6.09" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="AVHL" label="AVHL">
+        <attvalues>
+          <attvalue for="0" value="62.68" />
+          <attvalue for="1" value="9.65" />
+          <attvalue for="2" value="7.85" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="AVHR" label="AVHR">
+        <attvalues>
+          <attvalue for="0" value="62.82" />
+          <attvalue for="1" value="8.96" />
+          <attvalue for="2" value="-9.77" />
+          <attvalue for="3" value="6" />
+        </attvalues>
+      </node>
+      <node id="AVJL" label="AVJL">
+        <attvalues>
+          <attvalue for="0" value="65.08" />
+          <attvalue for="1" value="7.13" />
+          <attvalue for="2" value="8.47" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="AWAR" label="AWAR">
+        <attvalues>
+          <attvalue for="0" value="57.24" />
+          <attvalue for="1" value="6.53" />
+          <attvalue for="2" value="-7.97" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="AWBL" label="AWBL">
+        <attvalues>
+          <attvalue for="0" value="57.36" />
+          <attvalue for="1" value="8.3" />
+          <attvalue for="2" value="8.52" />
+          <attvalue for="3" value="10" />
+        </attvalues>
+      </node>
+      <node id="AWBR" label="AWBR">
+        <attvalues>
+          <attvalue for="0" value="57.4" />
+          <attvalue for="1" value="8.1" />
+          <attvalue for="2" value="-10.25" />
+          <attvalue for="3" value="11" />
+        </attvalues>
+      </node>
+      <node id="AWCL" label="AWCL">
+        <attvalues>
+          <attvalue for="0" value="55.82" />
+          <attvalue for="1" value="3.0" />
+          <attvalue for="2" value="9.03" />
+          <attvalue for="3" value="8" />
+        </attvalues>
+      </node>
+      <node id="AWCR" label="AWCR">
+        <attvalues>
+          <attvalue for="0" value="56.43" />
+          <attvalue for="1" value="1.74" />
+          <attvalue for="2" value="-9.51" />
+          <attvalue for="3" value="7" />
+        </attvalues>
+      </node>
+      <node id="BAGR" label="BAGR">
+        <attvalues>
+          <attvalue for="0" value="39.43" />
+          <attvalue for="1" value="4.06" />
+          <attvalue for="2" value="-8.24" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="CEPDL" label="CEPDL">
+        <attvalues>
+          <attvalue for="0" value="49.58" />
+          <attvalue for="1" value="13.62" />
+          <attvalue for="2" value="3.7" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="IL1DL" label="IL1DL">
+        <attvalues>
+          <attvalue for="0" value="32.71" />
+          <attvalue for="1" value="13.12" />
+          <attvalue for="2" value="2.18" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="IL1L" label="IL1L">
+        <attvalues>
+          <attvalue for="0" value="30.48" />
+          <attvalue for="1" value="7.23" />
+          <attvalue for="2" value="6.98" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="IL1R" label="IL1R">
+        <attvalues>
+          <attvalue for="0" value="30.97" />
+          <attvalue for="1" value="5.64" />
+          <attvalue for="2" value="-6.96" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="IL1VL" label="IL1VL">
+        <attvalues>
+          <attvalue for="0" value="28.94" />
+          <attvalue for="1" value="1.64" />
+          <attvalue for="2" value="3.72" />
+          <attvalue for="3" value="12" />
+        </attvalues>
+      </node>
+      <node id="IL1VR" label="IL1VR">
+        <attvalues>
+          <attvalue for="0" value="29.64" />
+          <attvalue for="1" value="0.96" />
+          <attvalue for="2" value="-1.72" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="IL2L" label="IL2L">
+        <attvalues>
+          <attvalue for="0" value="29.9" />
+          <attvalue for="1" value="7.93" />
+          <attvalue for="2" value="9.15" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="IL2R" label="IL2R">
+        <attvalues>
+          <attvalue for="0" value="30.16" />
+          <attvalue for="1" value="6.61" />
+          <attvalue for="2" value="-8.8" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="IL2VL" label="IL2VL">
+        <attvalues>
+          <attvalue for="0" value="25.35" />
+          <attvalue for="1" value="2.14" />
+          <attvalue for="2" value="5.06" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="OLLR" label="OLLR">
+        <attvalues>
+          <attvalue for="0" value="32.56" />
+          <attvalue for="1" value="8.59" />
+          <attvalue for="2" value="-7.21" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="OLQDL" label="OLQDL">
+        <attvalues>
+          <attvalue for="0" value="37.55" />
+          <attvalue for="1" value="14.22" />
+          <attvalue for="2" value="2.16" />
+          <attvalue for="3" value="13" />
+        </attvalues>
+      </node>
+      <node id="OLQDR" label="OLQDR">
+        <attvalues>
+          <attvalue for="0" value="38.7" />
+          <attvalue for="1" value="13.39" />
+          <attvalue for="2" value="-5.63" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="OLQVL" label="OLQVL">
+        <attvalues>
+          <attvalue for="0" value="36.66" />
+          <attvalue for="1" value="3.93" />
+          <attvalue for="2" value="6.16" />
+          <attvalue for="3" value="12" />
+        </attvalues>
+      </node>
+      <node id="OLQVR" label="OLQVR">
+        <attvalues>
+          <attvalue for="0" value="37.26" />
+          <attvalue for="1" value="3.11" />
+          <attvalue for="2" value="-5.9" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="RIBL" label="RIBL">
+        <attvalues>
+          <attvalue for="0" value="62.04" />
+          <attvalue for="1" value="3.07" />
+          <attvalue for="2" value="6.02" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="RIBR" label="RIBR">
+        <attvalues>
+          <attvalue for="0" value="61.68" />
+          <attvalue for="1" value="2.3" />
+          <attvalue for="2" value="-6.76" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="RICR" label="RICR">
+        <attvalues>
+          <attvalue for="0" value="69.97" />
+          <attvalue for="1" value="-0.2" />
+          <attvalue for="2" value="-8.23" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="RIH" label="RIH">
+        <attvalues>
+          <attvalue for="0" value="47.05" />
+          <attvalue for="1" value="-0.69" />
+          <attvalue for="2" value="-0.08" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="RIML" label="RIML">
+        <attvalues>
+          <attvalue for="0" value="63.59" />
+          <attvalue for="1" value="-0.63" />
+          <attvalue for="2" value="4.45" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="RIMR" label="RIMR">
+        <attvalues>
+          <attvalue for="0" value="62.64" />
+          <attvalue for="1" value="-1.99" />
+          <attvalue for="2" value="-4.65" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="RIPL" label="RIPL">
+        <attvalues>
+          <attvalue for="0" value="35.3" />
+          <attvalue for="1" value="7.97" />
+          <attvalue for="2" value="6.37" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="RIR" label="RIR">
+        <attvalues>
+          <attvalue for="0" value="54.1" />
+          <attvalue for="1" value="0.76" />
+          <attvalue for="2" value="1.4" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="RIVL" label="RIVL">
+        <attvalues>
+          <attvalue for="0" value="64.03" />
+          <attvalue for="1" value="11.92" />
+          <attvalue for="2" value="4.43" />
+          <attvalue for="3" value="14" />
+        </attvalues>
+      </node>
+      <node id="RIVR" label="RIVR">
+        <attvalues>
+          <attvalue for="0" value="64.38" />
+          <attvalue for="1" value="11.31" />
+          <attvalue for="2" value="-7.21" />
+          <attvalue for="3" value="14" />
+        </attvalues>
+      </node>
+      <node id="RMDR" label="RMDR">
+        <attvalues>
+          <attvalue for="0" value="52.31" />
+          <attvalue for="1" value="1.87" />
+          <attvalue for="2" value="-7.88" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="RMDVL" label="RMDVL">
+        <attvalues>
+          <attvalue for="0" value="47.33" />
+          <attvalue for="1" value="7.1" />
+          <attvalue for="2" value="9.76" />
+          <attvalue for="3" value="13" />
+        </attvalues>
+      </node>
+      <node id="RMDVR" label="RMDVR">
+        <attvalues>
+          <attvalue for="0" value="48.66" />
+          <attvalue for="1" value="5.29" />
+          <attvalue for="2" value="-10.21" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="RMER" label="RMER">
+        <attvalues>
+          <attvalue for="0" value="38.76" />
+          <attvalue for="1" value="7.16" />
+          <attvalue for="2" value="-7.87" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="RMFR" label="RMFR">
+        <attvalues>
+          <attvalue for="0" value="57.51" />
+          <attvalue for="1" value="-2.4" />
+          <attvalue for="2" value="0.07" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="SIADR" label="SIADR">
+        <attvalues>
+          <attvalue for="0" value="53.27" />
+          <attvalue for="1" value="-2.23" />
+          <attvalue for="2" value="-1.59" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="SIAVL" label="SIAVL">
+        <attvalues>
+          <attvalue for="0" value="66.79" />
+          <attvalue for="1" value="-3.37" />
+          <attvalue for="2" value="3.33" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="SIBDR" label="SIBDR">
+        <attvalues>
+          <attvalue for="0" value="54.5" />
+          <attvalue for="1" value="1.43" />
+          <attvalue for="2" value="-6.72" />
+          <attvalue for="3" value="15" />
+        </attvalues>
+      </node>
+      <node id="SIBVR" label="SIBVR">
+        <attvalues>
+          <attvalue for="0" value="53.46" />
+          <attvalue for="1" value="-1.56" />
+          <attvalue for="2" value="-1.27" />
+          <attvalue for="3" value="15" />
+        </attvalues>
+      </node>
+      <node id="SMBDL" label="SMBDL">
+        <attvalues>
+          <attvalue for="0" value="59.79" />
+          <attvalue for="1" value="-1.85" />
+          <attvalue for="2" value="2.44" />
+          <attvalue for="3" value="10" />
+        </attvalues>
+      </node>
+      <node id="SMBDR" label="SMBDR">
+        <attvalues>
+          <attvalue for="0" value="60.22" />
+          <attvalue for="1" value="-1.45" />
+          <attvalue for="2" value="-1.9" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="SMBVR" label="SMBVR">
+        <attvalues>
+          <attvalue for="0" value="67.29" />
+          <attvalue for="1" value="-4.46" />
+          <attvalue for="2" value="-1.61" />
+          <attvalue for="3" value="11" />
+        </attvalues>
+      </node>
+      <node id="SMDDR" label="SMDDR">
+        <attvalues>
+          <attvalue for="0" value="54.1" />
+          <attvalue for="1" value="0.01" />
+          <attvalue for="2" value="-2.69" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SMDVR" label="SMDVR">
+        <attvalues>
+          <attvalue for="0" value="51.03" />
+          <attvalue for="1" value="9.15" />
+          <attvalue for="2" value="-9.28" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="URADL" label="URADL">
+        <attvalues>
+          <attvalue for="0" value="30.69" />
+          <attvalue for="1" value="12.53" />
+          <attvalue for="2" value="4.5" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="URAVL" label="URAVL">
+        <attvalues>
+          <attvalue for="0" value="33.57" />
+          <attvalue for="1" value="2.35" />
+          <attvalue for="2" value="4.74" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="URBL" label="URBL">
+        <attvalues>
+          <attvalue for="0" value="34.05" />
+          <attvalue for="1" value="7.53" />
+          <attvalue for="2" value="8.41" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="URBR" label="URBR">
+        <attvalues>
+          <attvalue for="0" value="34.27" />
+          <attvalue for="1" value="6.21" />
+          <attvalue for="2" value="-8.65" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="URXL" label="URXL">
+        <attvalues>
+          <attvalue for="0" value="50.65" />
+          <attvalue for="1" value="13.05" />
+          <attvalue for="2" value="2.27" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="URXR" label="URXR">
+        <attvalues>
+          <attvalue for="0" value="50.87" />
+          <attvalue for="1" value="12.3" />
+          <attvalue for="2" value="-5.18" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="URYDL" label="URYDL">
+        <attvalues>
+          <attvalue for="0" value="34.36" />
+          <attvalue for="1" value="12.32" />
+          <attvalue for="2" value="4.64" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="URYVL" label="URYVL">
+        <attvalues>
+          <attvalue for="0" value="32.7" />
+          <attvalue for="1" value="5.12" />
+          <attvalue for="2" value="6.71" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="URYVR" label="URYVR">
+        <attvalues>
+          <attvalue for="0" value="33.1" />
+          <attvalue for="1" value="3.42" />
+          <attvalue for="2" value="-6.05" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="ADFL" target="AUAL" id="0" />
+      <edge source="ADFR" target="URXR" id="1" />
+      <edge source="ADLR" target="AVBR" id="2" />
+      <edge source="AINL" target="RIBL" id="3" />
+      <edge source="AINR" target="AUAR" id="4" />
+      <edge source="ASER" target="AWCL" id="5" />
+      <edge source="ASHL" target="ADFL" id="6" />
+      <edge source="ASHL" target="ASKL" id="7" />
+      <edge source="ASKR" target="ASHR" id="8" />
+      <edge source="AUAL" target="AVDR" id="9" />
+      <edge source="AVAL" target="URYDL" id="10" />
+      <edge source="AVAL" target="URYVR" id="11" />
+      <edge source="AVEL" target="RMDVR" id="12" />
+      <edge source="AVER" target="RMDVR" id="13" />
+      <edge source="AVHL" target="AVJL" id="14" />
+      <edge source="AVHR" target="ADLL" id="15" />
+      <edge source="AVJL" target="AVBL" id="16" />
+      <edge source="AWAR" target="AUAR" id="17" />
+      <edge source="AWBL" target="SMBDL" id="18" />
+      <edge source="AWBR" target="SMBVR" id="19" />
+      <edge source="AWCR" target="ASEL" id="20" />
+      <edge source="CEPDL" target="RIPL" id="21" />
+      <edge source="CEPDL" target="SIADR" id="22" />
+      <edge source="CEPDL" target="SMBDR" id="23" />
+      <edge source="CEPDL" target="URADL" id="24" />
+      <edge source="IL1L" target="IL1DL" id="25" />
+      <edge source="IL1L" target="RMDVR" id="26" />
+      <edge source="IL1VR" target="IL1R" id="27" />
+      <edge source="IL2L" target="RMER" id="28" />
+      <edge source="IL2R" target="IL1VR" id="29" />
+      <edge source="IL2R" target="OLLR" id="30" />
+      <edge source="IL2R" target="URBR" id="31" />
+      <edge source="IL2VL" target="BAGR" id="32" />
+      <edge source="IL2VL" target="RIH" id="33" />
+      <edge source="OLLR" target="IL2R" id="34" />
+      <edge source="OLLR" target="SMDDR" id="35" />
+      <edge source="OLLR" target="SMDVR" id="36" />
+      <edge source="OLQDL" target="RMDVL" id="37" />
+      <edge source="OLQVL" target="IL1VL" id="38" />
+      <edge source="OLQVR" target="IL1VR" id="39" />
+      <edge source="RIBL" target="AVDR" id="40" />
+      <edge source="RIBL" target="RIBL" id="41" />
+      <edge source="RIBR" target="SIADR" id="42" />
+      <edge source="RICR" target="SMDDR" id="43" />
+      <edge source="RIH" target="AUAR" id="44" />
+      <edge source="RIH" target="BAGR" id="45" />
+      <edge source="RIH" target="RMER" id="46" />
+      <edge source="RIML" target="AVAL" id="47" />
+      <edge source="RIML" target="AVER" id="48" />
+      <edge source="RIML" target="RMFR" id="49" />
+      <edge source="RIMR" target="AVEL" id="50" />
+      <edge source="RIR" target="AUAL" id="51" />
+      <edge source="RIR" target="BAGR" id="52" />
+      <edge source="RIVL" target="RIVR" id="53" />
+      <edge source="RMDR" target="RIMR" id="54" />
+      <edge source="SIBDR" target="SIBVR" id="55" />
+      <edge source="URAVL" target="RMER" id="56" />
+      <edge source="URBL" target="SIAVL" id="57" />
+      <edge source="URBL" target="SMBDR" id="58" />
+      <edge source="URBR" target="IL2R" id="59" />
+      <edge source="URBR" target="OLQDR" id="60" />
+      <edge source="URBR" target="OLQVR" id="61" />
+      <edge source="URBR" target="RICR" id="62" />
+      <edge source="URXL" target="AVBL" id="63" />
+      <edge source="URXR" target="AVBL" id="64" />
+      <edge source="URYVL" target="AVBR" id="65" />
+    </edges>
+  </graph>
+</gexf>

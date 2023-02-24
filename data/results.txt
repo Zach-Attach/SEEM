@@ -1,0 +1,46 @@
+KL Divergence
+
+KL Divergence for Distance Distributions (W1)
+KL(SEEM || CENN) 0.07362876851583132
+KL(RDDAM || CENN) 1.15058425130255
+KL(Erdos-Renyi || CENN) 0.12435983071533989
+
+KL Divergence for Distance Distributions (W8)
+KL(SEEM || CENN) 0.07610387307413483
+KL(RDDAM || CENN) 0.7807455348734075
+KL(Erdos-Renyi || CENN) 0.15469568840472253
+
+
+
+KL Divergence for Degree Distributions (W1)
+KL(SEEM || CENN) 0.27620474092215974
+KL(RDDAM || CENN) 0.19537195809255203
+KL(Erdos-Renyi || CENN) 0.39005535115991447
+
+KL Divergence for Degree Distributions (W8)
+KL(SEEM || CENN) 0.15110917464003945
+KL(RDDAM || CENN) 0.10191854088440626
+KL(Erdos-Renyi || CENN) 0.29888379201441484
+
+
+Wasserstein Distance
+
+Wasserstein Distance for Distance Distributions (W1)
+Wasserstein Distance between SEEM and CENN 0.004112735032411323
+Wasserstein Distance between RDDAM and CENN 0.013453382103288083
+Wasserstein Distance between Erdos-Renyi and CENN 0.0052290359819001046
+
+Wasserstein Distance for Distance Distributions (W8)
+Wasserstein Distance between SEEM and CENN 0.0031754366982844704
+Wasserstein Distance between RDDAM and CENN 0.012738764605263419
+Wasserstein Distance between Erdos-Renyi and CENN 0.004316728164013454
+
+Wasserstein Distance for Degree Distributions (W1)
+Wasserstein Distance between SEEM and CENN 0.006424936386768452
+Wasserstein Distance between RDDAM and CENN 0.0051083969465648875
+Wasserstein Distance between Erdos-Renyi and CENN 0.01366055979643765
+
+Wasserstein Distance for Degree Distributions (W8)
+Wasserstein Distance between SEEM and CENN 0.0031943384223918564
+Wasserstein Distance between RDDAM and CENN 0.0025221586089906665
+Wasserstein Distance between Erdos-Renyi and CENN 0.009537107718405432
