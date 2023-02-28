@@ -49,9 +49,9 @@ def wassersteinDistances(seq, measure, version):
   wass = [wasserstein_distance(distributions[k],distributions['CENN']) for k in keys]
 
   plt.clf()
-  plt.rcParams.update({'font.size': 16})
-  plt.figure(figsize=(10, 4))
-  plt.title(f'Wasserstein Distances from CENN {measure} Distribution ({version})')
+  plt.rcParams.update({'font.size': 6})
+  plt.figure(figsize=(3, 4))
+  plt.title(f'Wasserstein Distances from CENN {measure} Distribution ({version})', fontsize=6)
   plt.bar(keys, wass, color=[color[k] for k in keys])
   plt.savefig(f'data/images/compareDistributions/wassersteinDistances_{measure}_{version}_3.png', dpi=300)
   plt.show()
