@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1678204828 "/Users/zyle/Code/SEEM/paper/draft1.tex" "draft1.pdf" "draft1" 1678204831
+["pdflatex"] 1678211487 "/Users/zyle/Code/SEEM/paper/draft1.tex" "draft1.pdf" "draft1" 1678211489
   "../data/images/other/SpatialOverlaps.png" 1677775227 7201762 ab5e519d455dcbf0f0df7441f37d52d0 ""
-  "../data/images/stats/all2.pgf" 1678202155 456246 c3c7033afdff61e0581527510fa5d80a ""
+  "../data/images/stats/all2.pgf" 1678211486 456246 3064c835fa8dc8cdda0e9be76b99652b ""
   "../data/spreadsheets/dataL1.tex" 1678204793 485 c0b516b321683716af25b4d42b23e27a ""
   "../data/spreadsheets/dataL5.tex" 1678202916 493 e68d2056f5b847096d77c9f5729c2d6b ""
   "/Users/zyle/Code/SEEM/paper/draft1.tex" 1678203077 666 ec57904e117a10189e8a3107b9fd77bd ""
@@ -165,11 +165,11 @@
   "Sections/heading.tex" 1677775227 271 5781c86d78023c4eabbd25510c00bf2d ""
   "Sections/intro.tex" 1678202656 6108 64502d831f905ca76e5f930c8f5c973e ""
   "Sections/methods.tex" 1677775227 3542 3d401d7f33ebf66abbd74429860a641c ""
-  "Sections/results.tex" 1678204826 15438 05bc05d40001db9ff0e6ce4158b72014 ""
+  "Sections/results.tex" 1678207231 15456 12fb2511240fdd85c9f332ec19a7ee90 ""
   "alifeconf.sty" 1678044016 8747 11695cc43150de4d1ff41f7c2a4666aa ""
   "commands.tex" 1677775227 37 2be55ba7563ae8bd86ff80b7bd9ce2a9 ""
-  "draft1.aux" 1678204830 2948 a4c7f7a567d2b72314f7c0947d6509b3 "pdflatex"
-  "draft1.out" 1678204830 1607 2c4b8721b1d56af0dd14246d75fead5f "pdflatex"
+  "draft1.aux" 1678211489 2948 a4c7f7a567d2b72314f7c0947d6509b3 "pdflatex"
+  "draft1.out" 1678211489 1607 2c4b8721b1d56af0dd14246d75fead5f "pdflatex"
   "draft1.tex" 1678203077 666 ec57904e117a10189e8a3107b9fd77bd ""
   (generated)
   "draft1.aux"

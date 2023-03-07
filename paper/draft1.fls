@@ -799,6 +799,7 @@ INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmbxi10.tfm
 INPUT ../data/images/stats/all2.pgf
 INPUT ../data/images/stats/all2.pgf
 INPUT ../data/images/stats/all2.pgf
