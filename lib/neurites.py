@@ -4,7 +4,7 @@ from lib.positions import coordArr, getBounds
 from lib.geometry import createBoundingBox, testBoundingBox, getBoundingPoint
 from lib.graphs import G_Kaiser_PenPals
 
-EPSILON = 10 #0.001
+EPSILON = 3 #10 #0.001
 
 def neurite(origin, midPoint, boundingBox):
   ray = Ray3D(Point3D(origin), Point3D(midPoint))

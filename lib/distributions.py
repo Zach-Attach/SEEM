@@ -2,8 +2,22 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import wasserstein_distance
-from lib.colors import color
+from lib.style import color
 
+# %%
+
+def wass(dist1, dist2) -> float:
+    # NOTE: maxdist assumes int distribution for x axis
+    maxDist = max([max(dist1[0]), max(dist2[0])])
+
+    newDist1, newDist2 = np.zeros(maxDist+1), np.zeros(maxDist+1)
+    totalDist1, totalDist2 = sum(dist1[1]), sum(dist2[1])
+
+    for i in range(maxDist+1):
+      newDist1[i] = dist1[1][list(dist1[0]).index(i)]/totalDist1 if i in dist1[0] else 0
+      newDist2[i] = dist2[1][list(dist2[0]).index(i)]/totalDist2 if i in dist2[0] else 0
+
+    return wasserstein_distance(newDist1, newDist2)
 # %%
 # create Distributions
 def createDistributions(distSeqs):

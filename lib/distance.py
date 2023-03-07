@@ -37,7 +37,7 @@ def distanceSequence(G, title='Degree Distribution', presentation=True, subplot=
     plt.ylabel("# of Edges")
 
 # %%
-def avgDistDist(G, title= 'Distance Distribution', presentation=True, subplot=False):
+def avgDistDist(Gs: list, title: str = 'Distance Distribution', presentation: bool = True, subplot: bool = False):
 
   if presentation:
     plt.style.use('dark_background')
@@ -45,7 +45,7 @@ def avgDistDist(G, title= 'Distance Distribution', presentation=True, subplot=Fa
     plt.style.use('default')
 
   distances = []
-  for graph in G:
+  for graph in Gs:
     for n, m, d in graph.edges(data='distance'):
       distances.append(round(d))
 
@@ -56,7 +56,7 @@ def avgDistDist(G, title= 'Distance Distribution', presentation=True, subplot=Fa
   dist_sequence = sorted(distances, reverse=True)
   dist, vals = np.unique(dist_sequence, return_counts=True)
 
-  vals = [v/len(G) for v in vals]
+  vals = [v/len(Gs) for v in vals]
 
   if subplot:
     return dist, vals

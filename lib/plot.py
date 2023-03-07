@@ -137,3 +137,34 @@ def multiBarPlot(dims, data, subtitles, title, figsize, maxX=None, maxY=None, sa
     plt.savefig(save)
 
   plt.show()
+
+def multiLinePlot():
+  fig,axes = plt.subplots(rows, cols, figsize=figsize)
+  plt.rcParams.update({'font.size': 12})
+  fig.suptitle(title, fontsize=18)
+  colors = ['red','#1f77b4','#ff7f0e','#2ca02c', '#9467bd']
+  if cols == 1:
+    for i in range(rows):
+      axes[i].bar(*data[i*cols],color=colors[i*cols])
+      axes[i].set_title(subtitles[i*cols])
+      if maxX:
+        axes[i].set_xlim(0, maxX)
+      if maxY:
+        axes[i].set_ylim(0, maxY)
+  else:
+    for j in range(cols):
+      for i in range(rows):
+          indx = j*rows+i
+          if indx >= len(data):
+            break
+          axes[i,j].bar(*data[indx], color=colors[indx])
+          axes[i,j].set_title(subtitles[indx])
+          if maxX:
+            axes[i,j].set_xlim(0, maxX)
+          if maxY:
+            axes[i,j].set_ylim(0, maxY)
+  
+  if save:
+    plt.savefig(save)
+
+  plt.show()

@@ -1,11 +1,5 @@
 \section{Results}
 
-\begin{figure*}[h]
-  \includegraphics[width=0.49\linewidth]{../data/images/stats/L1.png}
-  \includegraphics[width=0.49\linewidth]{../data/images/stats/Adults.png}
-  \caption{INSERT HERE}
-\end{figure*}
-
 % \subsection{NOTES}
 % The Results section is what needs the most work. It’s not clear yet what the Results are and what we are learning from them. If there are three or four sections to the Results — each section should be clearly titled.  I see a table and three figures — are each of those meant to be one of the sections of the Results? 
 % Each figure should have a caption. The caption should start with a title: what is it about, the big picture. Then the details of what it is that we are looking at. The text in the section that corresponds to it should dive deeper. Each section should answer four questions:
@@ -20,6 +14,20 @@ To answer the question of whether spatially embedding edges is an important fact
 
 NOTE: Is it clear that we are averaging across 1000 graphs?
 
+\begin{table}[H]
+  \resizebox{\linewidth}{!}{%
+  \import{}{../data/spreadsheets/dataL1}
+  }
+  \caption{INSERT HERE}
+\end{table}
+
+\begin{table}[H]
+  \resizebox{\linewidth}{!}{%
+  \import{}{../data/spreadsheets/dataL5}
+  }
+  \caption{INSERT HERE}
+\end{table}
+
 \subsubsection{Network Statistics}
 Comparing these networks can be done in several different ways. As an initial comparison, we chose to use network statistics to compare essential aspects of these graphs. 
 
@@ -32,14 +40,11 @@ We plotted the results of the network measures of all 1000 instances of each mod
 
 Looking at the results, we did not notice a significant difference between the results of L1 and L5 networks. One difference of interest was that the networks of Witvliet et al. (2021) had noticeably different clustering coefficients and total number of bidirectional links when compared with the enhanced connectome of White et al. (1984) (NOTE: N2U). It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 1). 
 
-\begin{table}[h]
-  \import{}{../data/spreadsheets/data}
-  \caption{INSERT HERE}
-\end{table}
-
 \textit{Clustering Coefficient:} RDDAM was closest to \ce in this statistic. This reinforces the idea that spatial proximity plays an important role in how neurons form connections and how they cluster in the way they do. It is surprising that our model did not have a stronger clustering coefficient given that closer neurites do not need to cross as large of a distance to potentially connect. This might account for why our model does slightly better than a random network. Although this difference is not that great.
 
 \textit{Edge Distance:} The average edge distance found that our model was the closest to \ce in this regard. It is important to note that our random networks were not that far behind. RDDAM had much shorter edges on average than any of the other networks. Given that it prioritizes proximity when making connections, this result is unsurprising. Given that our model was most similar to \ce in edge distance, this suggests that spatial embedding of neurites and soma alone might explain this characteristic of the network. As explained in the last section, neurites that start close to each other would be more likely to cross paths than those that start far away from each other.
+
+\textit{Connectivity:}
 
 \textit{Bidirectional Links:} The number of bidirectional links in \ce do not appear to be similar to any of the graphs resultant of these presented models. Given that our model creates graphs which are random subgraphs of a bidirectional set of all potential connections, directionality does not play a role in deciding connections. It having a higher number of bidirectional links can simply be explained by this reduced pool of connections to pick from. One is more likely to flip two heads with a coin than one is to roll two 1's with a die, given the same number of flips/rolls. By the same logic, a marginal increase in the number of bidirectional links likely is not a result of any novel network property.
 The RDDAM overrepresents bidirectional links. Given its preference for short connections, an even smaller subset of possible connections are most likely to be made, which are direction agnostic. This would explain why RDDAM has so many bidirectional links. The stochasticity of the model would also explain the larger range of values. None of these models sufficiently explain the amount of bidirectional links exhibited by \ce. 
@@ -50,27 +55,46 @@ The RDDAM overrepresents bidirectional links. Given its preference for short con
 
 % NOTE: Measure centrality??
 
+\begin{figure}[H]
+  % \centering
+  % \import{../data/images/stats}{all.pgf}
+  \input{../data/images/stats/all2.pgf}
+  % \input{../data/images/stats/L1.pgf}
+  % \input{../data/images/stats/Adults.pgf}
+  \caption{INSERT HERE}
+\end{figure}
+
 \textit{What does this tell us?} Looking at these statistics, it appears that RDDAM well characterizes the highly clustered neuronal networks of \ce. The edge distance of \ce appears to be only slightly shorter than random, which is likely explained by the spatial embedding of the network. The bidirectionality of \ce could not be explained by any network. 
 It is notable that for all of these measures the results of our model are similar to random networks. This might be a result of how instance networks are created through random selection. It might also indicate that this network is not selective enough. As it stands, there is not a definitive explanation for these results.
 
-\begin{figure*}[h]
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/degreeDist_W1_Rand.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Degree_L1_3.png}
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/degreeDist_L5_Rand.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Degree_L5_3.png}
+% \begin{figure}[h]
+%   \centering
+%   % \import{../data/images/stats}{all.pgf}
+%   \input{../data/images/distributions/degreeDist_L1_line.pgf}
+%   \input{../data/images/distributions/degreeDist_L5_line.pgf}
+%   % \input{../data/images/stats/L1.pgf}
+%   % \input{../data/images/stats/Adults.pgf}
+%   \caption{INSERT HERE}
+% \end{figure}
 
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/distDist_W1.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Distance_L1_3.png}
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/distDist_W8.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Distance_L5_3.png}
+% \begin{figure}[h]
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/degreeDist_W1_Rand.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Degree_L1_3.png}
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/degreeDist_L5_Rand.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Degree_L5_3.png}
 
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/bidistDist_W1.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_BidirectionalDistance_L1_3.png}
-    \includegraphics[width=0.32\linewidth]{../data/images/distributions/bidistDist_W8.png}
-    \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_BidirectionalDistance_L5_3.png}
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/distDist_W1.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Distance_L1_3.png}
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/distDist_W8.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_Distance_L5_3.png}
 
-  \caption{Degree distributions, plotting the number of nodes (y-axis) with a particular number of connections (x-axis). \textbf{NOTE:} Going to remove the purple sections from these graphs, use line graphs so I can overlap all distributions, add more caption, add letter labels, and will likely seperate and improve the bottom two graphs. }
-\end{figure*}
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/bidistDist_W1.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_BidirectionalDistance_L1_3.png}
+%     \includegraphics[width=0.32\linewidth]{../data/images/distributions/bidistDist_W8.png}
+%     \includegraphics[width=0.17\linewidth]{../data/images/compareDistributions/wassersteinDistances_BidirectionalDistance_L5_3.png}
+
+%   \caption{Degree distributions, plotting the number of nodes (y-axis) with a particular number of connections (x-axis). \textbf{NOTE:} Going to remove the purple sections from these graphs, use line graphs so I can overlap all distributions, add more caption, add letter labels, and will likely seperate and improve the bottom two graphs. }
+% \end{figure}
 
 \subsubsection{Distributions}
 
