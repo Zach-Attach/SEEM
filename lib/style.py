@@ -8,8 +8,16 @@ color = {
 
 lines = {
     'CENN': 'solid',
-    'SEEM': 'dashdot',
-    'RDDAM': 'dashed',
+    'SEEM': 'dashed',
+    'RDDAM': 'dotted',
     'ERN': 'dotted',
     'REEM': 'dashed'
+  }
+
+markers = {
+    'CENN': None,
+    'SEEM': 'o',
+    'RDDAM': None,
+    'ERN': '*',
+    'REEM': '.'
   }
