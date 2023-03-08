@@ -1,0 +1,153 @@
+\begin{thebibliography}{}
+
+\bibitem[Altun, 2017]{Altun}
+Altun, Z. (2017).
+\newblock Wormatlas embryo handbook - nervous system in the embryo - nerve ring
+  development.
+\newblock {\em WormAtlas}.
+
+\bibitem[Azevedo et~al., 2009]{Azevedo}
+Azevedo, F.~A., Carvalho, L.~R., Grinberg, L.~T., Farfel, J.~M., Ferretti,
+  R.~E., Leite, R.~E., Jacob~Filho, W., Lent, R., and Herculano-Houzel, S.
+  (2009).
+\newblock Equal numbers of neuronal and nonneuronal cells make the human brain
+  an isometrically scaled-up primate brain.
+\newblock {\em J Comp Neurol}, 513(5):532--41.
+
+\bibitem[Betzel and Bassett, 2017]{Betzel}
+Betzel, R.~F. and Bassett, D.~S. (2017).
+\newblock Generative models for network neuroscience: prospects and promise.
+\newblock {\em J R Soc Interface}, 14(136).
+
+\bibitem[Ceylan et~al., 2022]{Ceylan}
+Ceylan, M.~E., Yertutanol, F. D.~K., Dönmez, A., Öz, P., Ünsalver, B.~O.,
+  and Evrensel, A. (2022).
+\newblock Connectome or collectome? a neurophilosophical perspective.
+\newblock {\em Integrative Psychological and Behavioral Science},
+  56(1):266--279.
+
+\bibitem[Costa et~al., 2007]{Costa}
+Costa, L.~F., Kaiser, M., and Hilgetag, C.~C. (2007).
+\newblock Predicting the connectivity of primate cortical networks from
+  topological and spatial node properties.
+\newblock {\em BMC Systems Biology}, 1(1):16.
+
+\bibitem[Durbin, 1987]{Durbin}
+Durbin, R.~M. (1987).
+\newblock Studies on the development and organisation of the nervous system of
+  \textit{Caenorhabditis elegans}.
+
+\bibitem[Hentschel and Ooyen, 2000]{Hentschel}
+Hentschel, H. and Ooyen, A. (2000).
+\newblock Dynamic mechanisms for bundling and guidance during neural network
+  formation.
+\newblock {\em Physica A Statistical and Theoretical Physics}, 288:369--379.
+
+\bibitem[Itzhack and Louzoun, 2010]{Itzhack}
+Itzhack, R. and Louzoun, Y. (2010).
+\newblock Random distance dependent attachment as a model for neural network
+  generation in the caenorhabditis elegans.
+\newblock {\em Bioinformatics (Oxford, England)}, 26:647--52.
+
+\bibitem[Izquierdo, 2019]{Izquierdo}
+Izquierdo, E.~J. (2019).
+\newblock Role of simulation models in understanding the generation of behavior
+  in \textit{C. elegans}.
+\newblock {\em Current Opinion in Systems Biology}, 13:93--101.
+
+\bibitem[Kaiser and Hilgetag, 2006]{Kaiser}
+Kaiser, M. and Hilgetag, C.~C. (2006).
+\newblock Nonoptimal component placement, but short processing paths, due to
+  long-distance projections in neural systems.
+\newblock {\em PLOS Computational Biology}, 2(7):e95.
+
+\bibitem[Khajezade et~al., 2019]{Khajezade}
+Khajezade, M., Goliaei, S., and Veisi, H. (2019).
+\newblock A game-theoretical network formation model for \textit{C. elegans}
+  neural network.
+\newblock {\em Frontiers in Computational Neuroscience}, 13.
+
+\bibitem[Kötter, 2004]{Kotter}
+Kötter, R. (2004).
+\newblock Online retrieval, processing, and visualization of primate
+  connectivity data from the cocomac database.
+\newblock {\em Neuroinformatics}, 2(2):127--144.
+
+\bibitem[McCormick et~al., 2004]{McCormick}
+McCormick, B.~H., Koh, W., Choe, Y., Abbott, L.~C., Keyser, J., Mayerich, D.,
+  Melek, Z., and Doddapaneni, P. (2004).
+\newblock Construction of anatomically correct models of mouse brain networks.
+\newblock {\em Neurocomputing}, 58-60:379--386.
+
+\bibitem[Nicosia et~al., 2013]{Nicosia}
+Nicosia, V., Vértes, P.~E., Schafer, W.~R., Latora, V., and Bullmore, E.~T.
+  (2013).
+\newblock Phase transition in the economically modeled growth of a cellular
+  nervous system.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  110(19):7880--7885.
+
+\bibitem[Prinz et~al., 2004]{Prinz}
+Prinz, A.~A., Bucher, D., and Marder, E. (2004).
+\newblock Similar network activity from disparate circuit parameters.
+\newblock {\em Nature Neuroscience}, 7(12):1345--1352.
+
+\bibitem[Pérez-Escudero and Polavieja, 2007]{PerezEscudero}
+Pérez-Escudero, A. and Polavieja, G. G.~d. (2007).
+\newblock Optimally wired subnetwork determines neuroanatomy of
+  \textit{Caenorhabditis elegans}.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  104(43):17180--17185.
+
+\bibitem[Rheault et~al., 2020]{Rheault}
+Rheault, F., Poulin, P., Valcourt~Caron, A., St-Onge, E., and Descoteaux, M.
+  (2020).
+\newblock Common misconceptions, hidden biases and modern challenges of dmri
+  tractography.
+\newblock {\em J Neural Eng}, 17(1):011001.
+
+\bibitem[Schafer, 2006]{Schafer}
+Schafer, W.~R. (2006).
+\newblock Neurophysiological methods in \textit{C. elegans}: an introduction.
+\newblock {\em WormBook : the online review of C. elegans biology}, pages 1--4.
+
+\bibitem[Skuhersky et~al., 2022]{Skuhersky}
+Skuhersky, M., Wu, T., Yemini, E., Nejatbakhsh, A., Boyden, E., and Tegmark, M.
+  (2022).
+\newblock Toward a more accurate 3d atlas of \textit{C. elegans} neurons.
+\newblock {\em BMC Bioinformatics}, 23(1):195.
+
+\bibitem[Sporns et~al., 2005]{Sporns}
+Sporns, O., Tononi, G., and Kötter, R. (2005).
+\newblock The human connectome: A structural description of the human brain.
+\newblock {\em PLOS Computational Biology}, 1(4):e42.
+
+\bibitem[Van~Essen et~al., 2012]{VanEssen}
+Van~Essen, D.~C., Ugurbil, K., Auerbach, E., Barch, D., Behrens, T.~E.,
+  Bucholz, R., Chang, A., Chen, L., Corbetta, M., Curtiss, S.~W., Della~Penna,
+  S., Feinberg, D., Glasser, M.~F., Harel, N., Heath, A.~C., Larson-Prior, L.,
+  Marcus, D., Michalareas, G., Moeller, S., Oostenveld, R., Petersen, S.~E.,
+  Prior, F., Schlaggar, B.~L., Smith, S.~M., Snyder, A.~Z., Xu, J., and Yacoub,
+  E. (2012).
+\newblock The human connectome project: a data acquisition perspective.
+\newblock {\em Neuroimage}, 62(4):2222--31.
+
+\bibitem[White et~al., 1986]{White}
+White, J.~G., Southgate, E., Thomson, J.~N., and Brenner, S. (1986).
+\newblock The structure of the nervous system of the nematode
+  \textit{Caenorhabditis elegans}.
+\newblock {\em Philos Trans R Soc Lond B Biol Sci}, 314(1165):1--340.
+
+\bibitem[Witvliet et~al., 2021]{Witvliet}
+Witvliet, D., Mulcahy, B., Mitchell, J.~K., Meirovitch, Y., Berger, D.~R., Wu,
+  Y., Liu, Y., Koh, W.~X., Parvathala, R., Holmyard, D., Schalek, R.~L.,
+  Shavit, N., Chisholm, A.~D., Lichtman, J.~W., Samuel, A. D.~T., and Zhen, M.
+  (2021).
+\newblock Connectomes across development reveal principles of brain maturation.
+\newblock {\em bioRxiv}, page 2020.04.30.066209.
+
+\bibitem[WormAtlas, 2009]{WormAtlas2009}
+WormAtlas (2009).
+\newblock Wormbase project.
+
+\end{thebibliography}
