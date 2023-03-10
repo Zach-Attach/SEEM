@@ -23,8 +23,8 @@ def plot3D(Gs, titles, filename, darkmode=True, nodeColors=[]):
 
   titles2 = [titles[2],'',
             titles[4],'',
-            titles[1],'',
             titles[0],'',
+            titles[1],'',
             titles[3], ]
 
   if darkmode:
@@ -32,8 +32,8 @@ def plot3D(Gs, titles, filename, darkmode=True, nodeColors=[]):
   else:
     edgeColor, nodeTraceColor, bgColor = 'black', 'white', 'white'
   
-  fig = make_subplots(rows=3, cols=2, vertical_spacing=0, horizontal_spacing=0, subplot_titles=titles, specs=[[{'type': 'scene'},    {'type': 'scene'}],
-                           [{'type': 'scene'}, {'type': 'scene'}], [{'type': 'scene'}, {'type': 'scene'}]])
+  fig = make_subplots(rows=3, cols=3, vertical_spacing=0, horizontal_spacing=0, subplot_titles=titles2, specs=[[{'type': 'scene'},    {'type': 'scene'},{'type': 'scene'}],
+                           [{'type': 'scene'}, {'type': 'scene'},{'type': 'scene'}], [{'type': 'scene'}, {'type': 'scene'},{'type': 'scene'}]])
   fig2 = make_subplots(rows=3, cols=3, vertical_spacing=0, horizontal_spacing=0, subplot_titles=titles2, specs=[[{'type': 'scene'},    {'type': 'scene'},{'type': 'scene'}],
                            [{'type': 'scene'}, {'type': 'scene'},{'type': 'scene'}], [{'type': 'scene'}, {'type': 'scene'},{'type': 'scene'}]])
 
@@ -83,21 +83,20 @@ def plot3D(Gs, titles, filename, darkmode=True, nodeColors=[]):
     # we need to set the axis for the plot 
 
     #also need to create the layout for our plot
-
+    mapping = [(2,2),(1,1),(1,3),(3,1),(3,3)]
     fig.add_trace(
       trace_edges,
-      row=(n%3)+1, col=int(n/3)+1
+      row=mapping[n][0], col=mapping[n][1]
     )
 
     fig.add_trace(
       trace_nodes,
-      row=(n%3)+1, col=int(n/3)+1
+      row=mapping[n][0], col=mapping[n][1]
     )
 
     # fig = go.Figure(data=data, layout=layout)
     # fig.show()
     # fig.write_image(f'data/images/3D/{filename}.png')
-    mapping = [(2,2),(1,1),(1,3),(3,1),(3,3)]
 
     fig2.add_trace(
       trace_edges,
@@ -130,15 +129,19 @@ def plot3D(Gs, titles, filename, darkmode=True, nodeColors=[]):
   #               paper_bgcolor=bgColor)
   
   fig.update_layout(#title=title,
-              width=1000,
-              height=1000,
+              width=900,
+              height=900,
               showlegend=False, #True,
-              scene1={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1, 'y': 1, 'z': 1}}},
-              scene2={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1, 'y': 1, 'z': 1}}},
-              scene3={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1, 'y': 1, 'z': 1}}},
-              scene4={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1, 'y': 1, 'z': 1}}},
-              scene5={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1, 'y': 1, 'z': 1}}},
-              margin=dict(t=30, b=10, l=10, r=10),
+              scene1={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene2={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene3={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene4={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene5={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene6={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene7={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene8={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              scene9={'xaxis':axis, 'yaxis':axis, 'zaxis':axis, 'camera':{'eye': {'x': 1.75, 'y': 1, 'z': 1}}},
+              margin=dict(t=30, b=0, l=0, r=0),
               hovermode='closest',
               paper_bgcolor=bgColor)
 
