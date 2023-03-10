@@ -1,5 +1,4 @@
 \section{Results}
-
 % \subsection{NOTES}
 % The Results section is what needs the most work. It’s not clear yet what the Results are and what we are learning from them. If there are three or four sections to the Results — each section should be clearly titled.  I see a table and three figures — are each of those meant to be one of the sections of the Results? 
 % Each figure should have a caption. The caption should start with a title: what is it about, the big picture. Then the details of what it is that we are looking at. The text in the section that corresponds to it should dive deeper. Each section should answer four questions:
@@ -12,41 +11,37 @@ To answer the question of whether spatially embedding edges is an important fact
 We wanted to minimize the number of assumptions made in the model. 
 To account for the assumption made in determining neurite direction in SEEM, we compared these results with a random direction version of our model (REEM). 
 We also compared these networks with the Random Distance Dependent Attachment Model (RDDAM) from \cite{Itzhack} and a set of random networks (Erdos-Renyi Networks / ERN) to gauge how close our model is to the \ce network. 
+% TODO: Explain what L1 and L5 are
 To rule out development as a factor, we made comparisons to both a single L1 connectome ($\sim 0$ hours) and a set of 3 adult (L5) connectomes. 
 We measured these generative network models from a set of 100.
+
+\import{plots}{statTableL1}
+\import{plots}{statTableL5}
 
 \subsection{Network Statistics}
 Comparing these networks can be done in several different ways. As an initial comparison, we chose to use network statistics to compare essential aspects of these graphs. We chose to compare the average clustering coefficient, average edge distance, average connectivity, and average total number of bidirectional links. These network statistics were chosen as they were used by \cite{Itzhack} in their paper on the RDDAM, providing an initial point of comparison with previous work. We plotted the results of the network measures of all 100 instances of each model (see fig 2) and compared them with the results of these measures on the CENN. For the newborn (L1), we compared it to a single graph, but, for the adults (L5), this was three graphs.
 
 % 3. What is the observation of the results in detail.
-% 4. What is the interpretation, what do we take away from the experiment. 
-
-In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the enhanced connectome of \cite{White} (NOTE: N2U). 
-It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 1). 
-
-\import{plots}{statTableL1}
-
-\import{plots}{statTableL5}
-
-\import{Sections/results/stats}{clustering} % TODO
-\import{Sections/results/stats}{distance}
-\import{Sections/results/stats}{connectivity}
-
+% 4. What is the interpretation, what do we take away from the experiment.  
 \import{plots}{statViolin}
 \import{plots}{degreeDist}
 \import{plots}{distDist}
 
+In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the enhanced connectome of \cite{White} (NOTE: N2U).
+It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 1). 
+
+\import{Sections/results/stats}{clustering}
+\import{Sections/results/stats}{distance}
+
+\import{Sections/results/stats}{connectivity}
 \import{Sections/results/stats}{bidirectionalLinks}
-
-% NOTE: Look at the distribution of bidirectional links along edge distance. What does \ce look like?
-
-% NOTE: Take a second look at the final measure and try to replicate.
-
 \import{Sections/results/stats}{outro}
 
 \subsection{Distributions}
 
-While these statistics give us an idea of how some of the attributes of these networks in describing the underlying structure of the CENN, it does not give us a picture of how the edges in any of these networks are distributed. We had two questions: 
+While these statistics give us an idea of how some of the attributes of these networks in describing the underlying structure of the CENN, it does not give us a picture of how the edges in any of these networks are distributed. 
+Network distributions can give us a better insight into the shape of these networks.
+We had two questions: 
 1) What is the structural makeup of these networks? (Are they scale-free, small-world, etc.?) 
 2) What is the physical makeup of these networks?
 
@@ -57,38 +52,20 @@ For the adults, these distributions were averaged.
 \import{Sections/results/distributions}{degree}
 \import{Sections/results/distributions}{distance}
 
-% \subsubsection{Bidirectional Edges:} Given the results of comparing numbers of bidirectional edges in these networks, we were curious as to what these bidirectional connections looked like in \ce. Did they result from a preference for short connections, were they random, or were they distributed in a completely different way from any of our models. To answer this, we compared the edge distance distributions of all bidirectional edges in each graph (see fig 2). From the results, the bidirectionality of \ce frontal ganglia appears to be mostly random with the random graphs being closest to \ce and our model being a close second. RDDAM, preferring short connections, resulting in a very different looking distribution. Despite the number of bidirectional edges being between the amount shown in RDDAM and our model, it appears that these connections are random with respect to spatial distance. It is important to note that the number of bidirectional edges is still much higher than one would expect in a random graph. 
-
-% \textbf{NOTE:} I need to reexamine the source data to understand if these connections are electric or chemical. Shouldn't we expect the majority of connections to be bidirectional since most are electrical? Is there a misinterepretation of the data?
-
-\import{plots}{spatialSide}
 \import{plots}{spatialFront}
 
-\subsubsection{Spatial Embedding}
-\subsubsection{Overlaps}
+\subsection{Spatial Embedding} % TODO
+Examining the makeup in Euclidean space, we observe varying connection patterns between each model. 
+Our random examples, ERN and REEM, show to not appear to have any skewed distribution in their preferred connections. 
+On the other hand, our model (SEEM) and RDDAM paint a different picture. 
+SEEM appears to prefer connections that do not span the center (pharynx). 
+RDDAM appears to have connections mostly localized to the most clustered areas.
+From these observations, \ce frontal ganglia forms connections around the entire pharynx more often than our model would expect.
+Given that our model is unable to ``wrap'' around the pharynx, such a result is unsurprising.
 
-\textbf{SEEM predicts up to ~1/3 of all connections.}
+\subsection{Overlaps} % TODO
+Looking at the edges shared by the models and \ce, we find that none of the models' resulting networks contain a significant portion of the edges found in \ce. 
+These results are unsurprising given the results of their average connectivity and their spatial embedding.
+In spite of the network similarities that SEEM has in common with the \ce frontal ganglia, it is not an accurate approximation of it.
 
-\subsection{Breaking Down the Model}
-What aspects of SEEM lead to a model that in some ways is more similar to the CENN? This model's input parameters are the location of the neurons, the expected number of connections, the location of the Nerve Ring (VALUE), and Epsilon (the maximum distance two neurites must have to form a potential connection. The first two of these parameters come from empirical data so they will not be adjusted. Adjustment of the location of the Nerve Ring cannot be meaningfully adjusted as there are only a small number of neurons which closely lie on this border, making such changes insignificantly impactful to the overall shape of the network. Rather than adjusting the nerve ring location, adjusting the algorithm for determining neurite direction may prove as more useful in parsing out the model's relavent parameters. 
-
-\textbf{THIS IS WHERE WE TALK ABOUT THE RANDOM DIRECTION VERSION OF SEEM.}
-
-% \subsection{Neurite Direction}
-% Is neurite direction a significant factor in forming models which are similar to the CENN?
-
-% \subsection{Attachment Distance}
-% Is the maximum attachment distance between neurites important for creating a network more similar to the CENN?
-
-% \section{OLD}
-% \subsection{Network Statistics CHANGE}
-% SEEM was found to be the set of networks closest to the CENN in average edge distance (see table 1 and fig 1). [INSERT STATS FOR STATISTICAL SIGNIFICANCE BETWEEN DISTRIBUTIONS]. RDDAM were closest to the CENN in average clustering coefficient and number of bidirectional links. [INSERT STATS FOR STATISTICAL SIGNIFICANCE BETWEEN DISTRIBUTIONS]. These results were not heavily dependent on which network was chosen.
-
-% The degree distributions of RDDAM were also found to be most similar to the CENN with a Wasserstein Distance of 0.005 in L1 and 0.002 in adults (see fig 2). SEEM was close with a Wasserstein Distance of 0.006 in L1 and 0.003 in adults, making the distinction between the two insignificant. The degree distributions of Erdos-Renyi graphs appeared much less like the CENN with a Wasserstein Distance of 0.013 in L1 and 0.009 in adults. The average degree between all four graphs were not significantly different.
-
-
-
-
-% Comparing the distribution of edge distances shows a different picture. Here, the resulting graphs of SEEM were found to be closest to the CENN (see fig 3). The edge distance distributions in SEEM had a Wasserstein Distance of 0.004 in L1 and 0.003 in adults. The Erdos-Renyi graphs, with a Wasserstein Distance of 0.005 in L1 and 0.004 in adults, were even more similar to CENN than the RDDAM, with a Wasserstein Distance of 0.013 in L1 and adults. These results distinguish SEEM from RDDAM, showing the proclivity of RDDAM to form very short connections, something SEEM does not appear to do.
-
-% Spatially embedding these graphs using provided coordinates resulted in a particular connectivity pattern shared between the CENN and SEEM graphs (see Figure 4). [INSERT DATA ABOUT DISTRIBUTION OF CROSS-PHARYNX CONNECTIONS]
+\import{plots}{overlaps}

@@ -2,56 +2,88 @@
 
 \import{plots}{seemMethod}
 
-\textbf{Zoom out first and explain the larger goal first.}
-
-\textbf{Then explain the algorithm broadly.}
-
-\textbf{Then walk through details one by one. Use steps and orderings to help you at some point: There are 5 key steps in the process of achieving Y. First, we do this. Then, this. Finally, this.}
-
 We sought to understand how spatial embedding of neurites might explain the neural organizational structure of \ce. 
-We developed a model to create sets of networks which attempt to recreate the process of neurite growth and synapse formation in euclidean space. 
+We developed a model to create sets of networks which attempt to recreate the process of neurite growth and synapse formation in Euclidean space. 
 Our aim with this model is examine how neurites impact the structure of a network while keeping the number of assumptions to as few as possible.
 
-Rather than examine the entire neuronal network of \ce, we chose to narrow our analysis to the frontal ganglia. 
-This was chosen because many of \ce's motor neurons form connections in a more prescriptive fashion, leading to neurites much longer than those found in the frontal and posterior ganglia \citep{Witvliet}. 
-In total 131 neurons were used as nodes for our networks.
-
 \subsection{Data}
-The length and organization of neural processes in C. elegans are highly variable, particularly in the pharyngeal nervous system. 
-To simplify this, this research only used neurons in the frontal ganglia, whose length in connections are less variable. 
-All synaptic connections of 131 neurons in the adult C. elegans frontal ganglia were downloaded from www.dynamic-connectome.org/resources \citep{Kaiser,Kotter,McCormick}. 
+The length and organization of neural processes in \ce are highly variable, particularly in the pharyngeal nervous system. 
+To simplify this, this research focused on the neurons in the frontal ganglia, whose length in connections are less variable. 
+
+% TODO: Explain what L1 and L5 are
+The synaptic connections of a single L1 ($\sim 0$ hours) and two adult/L5 \ce were acquired from \cite{Witvliet}.
+A third adult/L5 connectome was acquired from \cite{Durbin}'s N2U, an updated version of the original \cite{White} connectome. 
 3D positions of the neurons were taken from \cite{Skuhersky}. 
-Newborn (L1) ($\sim 0$ hours) connectome data was downloaded from \url{https://nemanode.org} \citep{Witvliet}.
+
 \subsection{Model}
-UPDATE WHEN ADDING RANDOM DIRECTION SEEM I developed a generative model which spatially embeds edges as well as nodes. 
+We developed a generative model which spatially embeds edges as well as nodes. 
+It replicates the process of neurite growth and synaptogenesis while keeping the number of assumptions and parameters to a minimum. 
+Doing so allows us to better understand how spatial embedding of neurites alone impacts the makeup of the connectome.
+
 This model will be referred to as the Spatially Embedded Edge Model (SEEM). 
 SEEM iterates over every node. 
 Each node locates the node closest to it that is on the opposite side of the nerve ring, a region which contains more than half of all neural processes \citep{Altun}. 
-A line segment is drawn from the source node through the target node, terminating at the surface of the bounding box of the network. 
+We refer to these target nodes as the source node's ``penpal.''
+A line segment is drawn from the source node through the target node, terminating at the surface of the bounding box of the network (see fig 1). 
 The bounding box is defined as the smallest 3D box that can hold all nodes in the network. 
 These line segments are intended to represent a single neurite. 
-After all “neurites” have been drawn, the overlaps between these line segments are recorded. 
-Given these neurons have a diameter of 2-3 microns \citep{Schafer}, a distance less than or equal to 3 microns between any two lines will be considered an overlap. 
+Since most neurons in \ce only have 1-2 neurites, we chose for each neuron to exhibit a single neurite in our model.
+
+After all ``neurites'' have been drawn, the minimum distance between any two line segments are recorded. 
+Given these neurons have a diameter of 2-3 microns \citep{Schafer}, a distance less than or equal to 3 microns ($\varepsilon$) between any two lines will be considered an overlap. 
 All possible edges in the model have now been determined. 
 To generate a network, a random selection of directed edges are selected from the set of all possible edges. 
 The number of edges selected can be adjusted. 
-For these experiments, I used as many edges as were in the comparable CENN. 
-The code implementing this algorithm can be found at the link listed under \textit{Data and Code Availability}.
+For these experiments, we used as many edges as were in the comparable \ce neuronal network. 
+The code for this algorithm can be found at the link listed under \textit{Data and Code Availability}.
 
-INSERT RANDOM
+\subsection{Additional Model}
 
-To better minimize the nunber of assumptions in our model, we created a second model for comparison. 
+Our model assumes a particular directionality of its neurons.
+To account for what effects this assumption might have on the results, we created a second model for comparison. 
 The Randomly Embedded Edge Model (REEM) is created in the same way as our other model (SEEM) with one key difference. 
-Its neurites form in a random direction. 
+Rather than passing through the closest neuron opposite of the nerve ring, this model's neurites form in random directions.
 This model can explain our algorithm for determining neurite direction influences the results.
 
+\subsection{Networks for Comparison}
+In addition to our models, we chose two other sets of networks to compare. 
+The first are a set of networks resulting from the Random Distance Dependent Model (RDDAM) from \cite{Itzhack}. 
+This network will allow us to see the role of distance between soma alone plays in the network structure.
+This model determines whether or not to form a connection with the probability function $p(i \rightarrow j)= c(d)^{- \alpha }$. 
+Keeping in line with the original implementation, we kept $\alpha$ to 2.5 and adjusted $c$ so that the resulting number of connections would roughly match the number in the compared \ce frontal ganglia.
+
+The second set of networks chosen for comparison are a set of random networks. 
+We determined the Erdos-Renyi random network (ERN) to be a suitable random network for our analyses.
+These random networks will allow us to understand what results are a result of chance and what results are meaningful.
+
 \subsection{Network Comparison Methods}
-The output of SEEM was compared to the CENN, RDDAM outputs, and Erdos-Renyi random graphs. 
-Excluding CENN, each model was run for 1000 iterations, resulting in 1000 possible graphs. 
+
+We compared the four chosen \ce connectomes with the resulting networks of our model, the Spatially Embedded Edge Model (SEEM). 
+To better assess the insights from our model, we also compare the results from a model from the literature, the Random Distance Dependent Attachment Model (RDDAM), and with two null models: the Randomly Embedded Edge Model (REEM), and a set of Erdos-Renyi networks (ERN).
+For each connectome, each model was run for 100 iterations, resulting in 100 possible graphs. 
 Each metric was run over every instance of the graph and the average value was recorded. 
-To compare these networks, I used three measures used in \cite{Itzhack}. 
-These were average clustering coefficient, average distance, and total bidirectional links. 
-I attempted to include Average Connectivity as was done in the mentioned paper, but this proved difficult, so it was not included in this analysis. 
-To better understand the connectedness of the graphs, I also included average closeness centrality as a fourth comparison. 
-Average degree distributions were also included for comparison. 
-Finally, visual comparisons of randomly selected spatially embedded graphs were also incorporated to highlight patterns in the resulting networks.
+
+In order to make the comparison between different networks, we selected four distinct graph-theoretic properties: the average clusting coefficient, the average edge distance, the average connectivity, and the total number of bidirectional links. 
+These measures are useful means of understanding the general structure of the networks in question and were used when comparing the RDDAM to \ce \citep{Itzhack}.
+
+The clustering coefficient measures number of instances where two neighbors of a node are connected divided by the total number of instances possible ($k(i)(k(i)-1)$ in a directed graph where k(i) is the degree of node i). 
+As the name suggests, it helps us to understand how clustered a network is and get a better idea of how interconnected all nodes in the network are on average. 
+
+The average edge distance measures the average length of each link/edge in Euclidean space. 
+Given that many of these model account for Euclidean space when forming connections, this measure is relevant. 
+It gives us an idea of how long these connections are, providing a simple understanding of how these networks compare with \ce. 
+
+The average connectivity measures the average local connectivity between all pairs of nodes in the network.
+Local connectivity is defined as the minimum number of nodes that need to be pruned from the network to result in no paths connecting the two (resulting in 2 or more connected components).
+The average connectivity of the network can provide us with an idea of the network's redundancy, which can coincide with its metabolic efficiency and its resilience to perturbation.
+
+The total number of bidirectional edges is the number of instances where two nodes are connected to each other in a directed graph.
+When comparing graphs with similar number of edges, this property can help us to understand if nodes prefer to connected with neighbors.
+It can also show if there is a large amount of symmetry in the network.
+
+For a better understanding of how these networks are distributed, we also compared two distributions for all networks. 
+These were degree distribution and edge distance distribution. 
+Degree distribution gives us a general idea of the network's structure, and the edge distance distribution shows us how these connections project into Euclidean space.
+
+To see how descriptive these models are of the \ce frontal ganglia, we plotted a random network from each of these models in 3D Euclidean space.
+We also calculated the overlapping edges of each network to conclusively understand how close any of these models were to replicating a \ce connectome.

@@ -4,45 +4,45 @@ The top-level auxiliary file: draft1.aux
 The style file: apalike.bst
 Database file #1: citations.bib
 Warning--empty journal in WormAtlas2009
-You've used 24 entries,
+You've used 22 entries,
             1935 wiz_defined-function locations,
-            644 strings with 8750 characters,
-and the built_in function-call counts, 11082 in all, are:
-= -- 1021
-> -- 636
-< -- 13
-+ -- 236
-- -- 228
-* -- 1011
-:= -- 1957
-add.period$ -- 70
-call.type$ -- 24
-change.case$ -- 234
-chr.to.int$ -- 24
-cite$ -- 25
-duplicate$ -- 368
-empty$ -- 657
-format.name$ -- 262
-if$ -- 2131
+            631 strings with 8364 characters,
+and the built_in function-call counts, 10160 in all, are:
+= -- 936
+> -- 586
+< -- 12
++ -- 218
+- -- 210
+* -- 924
+:= -- 1793
+add.period$ -- 64
+call.type$ -- 22
+change.case$ -- 215
+chr.to.int$ -- 22
+cite$ -- 23
+duplicate$ -- 340
+empty$ -- 598
+format.name$ -- 242
+if$ -- 1954
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
-newline$ -- 121
-num.names$ -- 72
-pop$ -- 187
+missing$ -- 21
+newline$ -- 111
+num.names$ -- 66
+pop$ -- 173
 preamble$ -- 1
-purify$ -- 234
+purify$ -- 215
 quote$ -- 0
-skip$ -- 308
+skip$ -- 287
 stack$ -- 0
-substring$ -- 654
-swap$ -- 62
+substring$ -- 588
+swap$ -- 60
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 132
 warning$ -- 1
-while$ -- 68
+while$ -- 62
 width$ -- 0
-write$ -- 307
+write$ -- 281
 (There was 1 warning)
