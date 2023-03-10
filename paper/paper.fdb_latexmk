@@ -1,19 +1,19 @@
 # Fdb version 3
-["bibtex paper"] 1678467386 "paper.aux" "paper.bbl" "paper" 1678470022
+["bibtex paper"] 1678471105 "paper.aux" "paper.bbl" "paper" 1678471687
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "citations.bib" 1678318702 10703 11e5daff6b68b6a687d2101ff7590cf1 ""
-  "paper.aux" 1678470022 8298 f048e427aaa3bff9b0d250724f2574d0 "pdflatex"
+  "paper.aux" 1678471687 8242 5c3e79d3c2b0eea94c85dbe71a6b2581 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1678470021 "/Users/zyle/Code/SEEM/paper/paper.tex" "paper.pdf" "paper" 1678470022
+["pdflatex"] 1678471685 "/Users/zyle/Code/SEEM/paper/paper.tex" "paper.pdf" "paper" 1678471687
   "../data/images/3D/all1_middle.png" 1678422282 328519 4ba736a3e3470165a855efb35af85fcd ""
   "../data/images/distributions/degreeDist_L1_line.pgf" 1678421422 56173 fe11f27df9f67cd4461ee3a873dbaba9 ""
   "../data/images/distributions/degreeDist_L5_line.pgf" 1678421422 63172 23b77f5e61a0b4ae1c768ac30d226777 ""
   "../data/images/distributions/distDist_L1_line.pgf" 1678421422 69092 b388136fb455cd3aa06201c4e8c0d128 ""
   "../data/images/distributions/distDist_L5_line.pgf" 1678421423 74444 bc56c683fe82918001ab70ae904b724b ""
   "../data/images/other/SEEM_Method.png" 1677775227 761312 93f1f4b3acea6388ea3926793ed5ba56 ""
-  "../data/images/overlaps.pgf" 1678422336 130477 b3bd9fee8552680858a2e3884f26914d ""
+  "../data/images/overlaps.pgf" 1678471685 118054 bda70924e4a221a01192c8624d8640aa ""
   "../data/images/stats/all2.pgf" 1678457154 458114 ea6269968ece9e9b30420dccd2653593 ""
   "../data/spreadsheets/dataL1.tex" 1678436470 485 42f6a1247b92d25ef74b95a7ec4a8fa1 ""
   "../data/spreadsheets/dataL5.tex" 1678436470 494 695ce2a65f36092b1ed7e85a3654f852 ""
@@ -199,13 +199,13 @@
   "Sections/results/stats/outro.tex" 1678337627 841 60d72602bef66ca283760fdd89e95e8a ""
   "alifeconf.sty" 1678044016 8747 11695cc43150de4d1ff41f7c2a4666aa ""
   "commands.tex" 1678287150 44 e862c920223f467df6996956f76cc04e ""
-  "paper.aux" 1678470022 8298 f048e427aaa3bff9b0d250724f2574d0 "pdflatex"
-  "paper.bbl" 1678467386 5886 4615c79ea2ab6c6d06d36aa2f8da053a "bibtex paper"
-  "paper.out" 1678470022 1896 7fc40340b1ccaf8f9b7dcc6ab1ce4269 "pdflatex"
+  "paper.aux" 1678471687 8242 5c3e79d3c2b0eea94c85dbe71a6b2581 "pdflatex"
+  "paper.bbl" 1678471105 5886 4615c79ea2ab6c6d06d36aa2f8da053a "bibtex paper"
+  "paper.out" 1678471687 1896 7fc40340b1ccaf8f9b7dcc6ab1ce4269 "pdflatex"
   "paper.tex" 1678318215 679 ee0a1c8edf5c54bd14563dbc8531afa9 ""
   "plots/degreeDist.tex" 1678338085 399 6a035af9c672ad6d6088eb44ea2289ac ""
   "plots/distDist.tex" 1678319523 397 72bfa6b1867b5287307f8c1bcccf60dd ""
-  "plots/overlaps.tex" 1678339330 225 8a0e0099f3e5baae58209d3ee5928e09 ""
+  "plots/overlaps.tex" 1678470996 196 ce349f6a6f6b704f57bee2d745ad3db1 ""
   "plots/seemMethod.tex" 1678334649 1171 dadf1acc844162e0c78811f9de7fdb26 ""
   "plots/spatialFront.tex" 1678404326 220 a9ff01e8db1e9fc8cb5a33fbaabd82df ""
   "plots/statTableL1.tex" 1678339350 222 e24825ee0f5658f079fa17736054b6a2 ""
