@@ -94,6 +94,12 @@ Rheault, F., Poulin, P., Valcourt~Caron, A., St-Onge, E., and Descoteaux, M.
   tractography.
 \newblock {\em J Neural Eng}, 17(1):011001.
 
+\bibitem[Ryan et~al., 2016]{Ryan}
+Ryan, K., Lu, Z., and Meinertzhagen, I.~A. (2016).
+\newblock The cns connectome of a tadpole larva of \textit{Ciona intestinalis}
+  (l.) highlights sidedness in the brain of a chordate sibling.
+\newblock {\em eLife}, 5:e16962.
+
 \bibitem[Schafer, 2006]{Schafer}
 Schafer, W.~R. (2006).
 \newblock Neurophysiological methods in \textit{C. elegans}: an introduction.
@@ -105,11 +111,6 @@ Skuhersky, M., Wu, T., Yemini, E., Nejatbakhsh, A., Boyden, E., and Tegmark, M.
 \newblock Toward a more accurate 3d atlas of \textit{C. elegans} neurons.
 \newblock {\em BMC Bioinformatics}, 23(1):195.
 
-\bibitem[Sporns et~al., 2005]{Sporns}
-Sporns, O., Tononi, G., and Kötter, R. (2005).
-\newblock The human connectome: A structural description of the human brain.
-\newblock {\em PLOS Computational Biology}, 1(4):e42.
-
 \bibitem[Van~Essen et~al., 2012]{VanEssen}
 Van~Essen, D.~C., Ugurbil, K., Auerbach, E., Barch, D., Behrens, T.~E.,
   Bucholz, R., Chang, A., Chen, L., Corbetta, M., Curtiss, S.~W., Della~Penna,
@@ -120,11 +121,28 @@ Van~Essen, D.~C., Ugurbil, K., Auerbach, E., Barch, D., Behrens, T.~E.,
 \newblock The human connectome project: a data acquisition perspective.
 \newblock {\em Neuroimage}, 62(4):2222--31.
 
+\bibitem[Veraszt{\'o} et~al., 2020]{Veraszto}
+Veraszt{\'o}, C., Jasek, S., G{\"u}hmann, M., Shahidi, R., Ueda, N., Beard,
+  J.~D., Mendes, S., Heinz, K., Bezares-Calder{\'o}n, L.~A., Williams, E., and
+  J{\'e}kely, G. (2020).
+\newblock Whole-animal connectome and cell-type complement of the
+  three-segmented platynereis dumerilii larva.
+\newblock {\em bioRxiv}.
+
 \bibitem[White et~al., 1986]{White}
 White, J.~G., Southgate, E., Thomson, J.~N., and Brenner, S. (1986).
 \newblock The structure of the nervous system of the nematode
   \textit{Caenorhabditis elegans}.
 \newblock {\em Philos Trans R Soc Lond B Biol Sci}, 314(1165):1--340.
+
+\bibitem[Winding et~al., 2023]{Winding}
+Winding, M., Pedigo, B.~D., Barnes, C.~L., Patsolic, H.~G., Park, Y.,
+  Kazimiers, T., Fushiki, A., Andrade, I.~V., Khandelwal, A., Valdes-Aleman,
+  J., Li, F., Randel, N., Barsotti, E., Correia, A., Fetter, R.~D.,
+  Hartenstein, V., Priebe, C.~E., Vogelstein, J.~T., Cardona, A., and Zlatic,
+  M. (2023).
+\newblock The connectome of an insect brain.
+\newblock {\em Science}, 379(6636):eadd9330.
 
 \bibitem[Witvliet et~al., 2021]{Witvliet}
 Witvliet, D., Mulcahy, B., Mitchell, J.~K., Meirovitch, Y., Berger, D.~R., Wu,

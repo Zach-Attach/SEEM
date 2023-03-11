@@ -1,63 +1,37 @@
 \section{Introduction}
 
-% Artificial life -> brains
-% brains -> neurons \& glia 
-% how do they form connections?
-
-% Can we create a minimal model to explain the organization of these neurons?
-
-
-% \subsection{NOTES}
-% I see the Introduction has a good set of components to it. I highly recommend that you try to break it down into paragraphs. Each paragraph should have a topic sentence. And that the overall structure of the Intro should be relatively straightforward:
-% 1. Overall broad motivation for this project. Starting broad but probably ending more specifically with the question of interest. 
-% 2. Related work, what is known in this area. What has been done so far. 
-% 3. What challenge remains open and what are you proposing to do in this paper. 
-% 4. Organization of the paper. What should the reader expect in what follows? 
-
-% TODO: Rewrite much of this
-
 Despite tremendous computational power, no person has been able to create an algorithm as capable as the human brain. 
 With its approximately 86 billion neurons \citep{Azevedo}, the human brain is an organ so complex that charting its synaptic connections alone is a monumental task \citep{VanEssen}. 
 Tremendous time and effort are being invested in the creation of a complete human connectome without a definitive explanation of how this data would explain how the human brain functions \citep{Ceylan, Rheault}. 
 Accurate mapping of these connections in living brains alone prove difficult given modern technological limitations \citep{Rheault}. 
-With a neuronal network that is approximately one percent of one percent the size of a human’s \citep{Azevedo,White}, \textit{Caenorhabditis elegans} has the most complete connectome mapped at the cellular level \citep{White}. 
+
+With a neuronal network that is approximately one percent of one percent the size of a human’s \citep{Azevedo}, \textit{Caenorhabditis elegans} has the most complete connectome mapped at the cellular level \citep{White}. 
 One might expect that the neural functions of \ce would be well understood. 
 However, the dynamics and behaviors of the \ce neuronal network (CENN) have not been accurately replicated. 
-To truly understand how a brain works, a neuronal model replicating the structure and dynamics of said brain is essential \citep{Izquierdo}.
+While the topology of synaptic connections cannot predict the dynamics of a neuronal network, it does restrict what sort of dynamics are possible \citep{Prinz}.
+To truly understand how a brain works, a model replicating the structure and dynamics of said brain is essential \citep{Izquierdo}.
 
-Synaptic connections are a fundamental part of microscale connectomes \citep{Sporns}, but many of these connections vary dramatically across individuals. 
-Over half of all synaptic connections within an adult \ce are variable \citep{Witvliet}. 
-While the topology of synaptic connections cannot predict the dynamics of a neuronal network, it does restrict what sort of dynamics are possible \citep{Prinz}. 
-The process of trying to model it will likely help us understand the principles of how the variability arises and its significance for behavior in living organisms.
-The CENN exhibits consistent global attributes despite having so many variations \citep{PerezEscudero}. 
-What combination of variable connections result in a biologically accurate CENN remains unclear \citep{Witvliet}. 
-Without knowing of what variables are important in its formation, our understanding of the \ce neuronal network, and brains in general, is severely limited.
+Synaptic variability is a major roadblock to understanding the structural organization of brains. 
+Even with just 302 neurons, the neuronal network of the hermaphrodite \ce exhibits tremendous variability. 
+With over half of all its synaptic connections found to vary between healthy individuals, recording every possible \ce connectome morphology is untenable \citep{Witvliet}.
+Moreover, a complete knowledge of when and where synaptic connections  occur does not necessitate an understanding of how and why this variability occurs. 
+We cannot expect to understand the nature of \ce connectomic structure from large sets of data alone.
 
-Knowing what neuronal network topologies are possible for a neurotypical \ce is necessary to accurately modeling the entire dynamical CENN. 
-Manually mapping all possible topologies of \ce leads to a combinatorial explosion. 
-With 302 neurons, there are $302^{302}$ or $\sim 9 \cdot 10^{748}$ possible connection configurations for the CENN. 
-This only becomes worse with more complex organisms such as Drosophila or humans. 
-A trial-and-error approach is impractical in this context.
-Thus, we cannot reasonably expect to understand the nature of \ce connectomic structure from large sets of connectome data alone.
-
-Generative models are a promising method for understanding network formation and the parameter space where particular connectomes lie.
+Generative models are a promising method for understanding network formation and the parameter space where particular connectomes lie. 
 Generative network models create networks from a set of rules defining where and how connections are created \citep{Betzel}. 
 By focusing on how networks form and not on a complete list of nodes and edges, generative models are applicable to many brains, not just a single instance of one. 
-These models are an effective solution for neuronal networks of any complexity. 
 
-Several generative models attempt to accurately predict the network topology of \ce \citep{Costa,Itzhack,Khajezade,Nicosia}. 
-The Random Distance Dependent Attachment Model (RDDAM) is one such model\citep{Itzhack}. 
-It randomly forms connections with a probability that logarithmically decreases with an increase in spatial distance between two neurons. 
-The RDDAM creates networks shown to resemble the CENN in average length of connections, average connectivity, and shortest path length distribution. 
-Given its simple rules that align with observed neuronal organization in \ce \citep{PerezEscudero}, the RDDAM provides an excellent framework for future generative models of CENN connectivity to which to compare or improve. 
+\cite{Itzhack} developed a generative model that generated networks similar to the \ce connectome in average length of connections, average connectivity, and total number of bidirectional links. 
+Their model (I.e. the Random Distance Dependent Attachment Model (RDDAM)) randomly forms connections with a probability that logarithmically decreases with an increase in spatial distance between two neurons, expressed as $p(i \rightarrow j)= c(d)^{- \alpha }$.
+This aligns with the observations of neuronal organization in \ce \citep{PerezEscudero}.
+While several generative models attempt to accurately predict the network topology of \ce \citep{Costa, Khajezade, Nicosia}, the RDDAM’s simple rules makes it an excellent model for future generative models to which to compare..
 An essential aspect of the RDDAM is the spatial embedding of each neuron. 
 Neurons exist in physical space, interacting chemically and electrically with their surroundings. 
-What connections they make are in part a result of their location relative to other cells  \citep{Hentschel,Kaiser,PerezEscudero}. 
+What connections neurons make are in part a result of their location relative to other cells \citep{Hentschel, Kaiser, PerezEscudero}.
 
 Spatial embedding is not only relevant for the somas but for the neurites as well. 
 Neurites take up physical space within the body of \ce, limiting how many connections are physically possible within the organism. 
-The neurons of \ce each have one or two neurites which rarely branch, forming most of their connections as “en passant” synapses (i.e. synapses that do not form at the tip of the axon) \citep{Durbin,White}. 
-This pattern of neuronal connectivity is not accounted for in existing models of \ce neuronal connectivity \citep{Costa,Itzhack,Khajezade,Nicosia}. 
-Constraining connectivity to intersections along the path of a neurite may result in a network which is more similar to CENN than the results of existing generative model. 
-% I hypothesize that a generative model which spatially embeds both nodes and edges will result in a network more similar to CENN than RDDAM.
+The majority of neurons in \ce each have one or two neurites that are a single process, forming most of their connections as “en passant” synapses (i.e. synapses that do not form at the tip of the axon) \citep{Durbin, White}. 
+This pattern of neuronal connectivity is not accounted for in existing models of \ce neuronal connectivity \citep{Costa, Itzhack, Khajezade, Nicosia}. 
+Constraining connectivity to intersections along the path of a neurite may result in a network which is more similar to CENN than the results of existing generative models. 
 This leads us to the question: How much of the \ce neuronal network structure is explained by the spatial embedding of its neurites?
