@@ -172,37 +172,40 @@ def plot3D(Gs, titles, filename, darkmode=True, nodeColors=[]):
                 scene7={'xaxis':axis, 'yaxis':axis, 'zaxis':axis},
                 scene8={'xaxis':axis, 'yaxis':axis, 'zaxis':axis},
                 scene9={'xaxis':axis, 'yaxis':axis, 'zaxis':axis},
-                margin=dict(t=30, b=0, l=0, r=0),
+                margin=dict(t=30, b=0, l=-0, r=-0),
                 hovermode='closest',
                 paper_bgcolor=bgColor)
 
   fig2.update_layout(scene_camera=camera)#, title=title
 
-  fig2.layout.scene1.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene1.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene2.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene2.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene3.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene3.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene4.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene4.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene5.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene5.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene6.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene6.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene7.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene7.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene8.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene8.camera.center = dict(x=0, y=-0.25, z=0)
-  fig2.layout.scene9.camera.eye = dict(x=1.7, y=0, z=0)
-  fig2.layout.scene9.camera.center = dict(x=0, y=-0.25, z=0)
+  eye = dict(x=2.7, y=0, z=0)
+  center = dict(x=0, y=-0.25, z=0)
+
+  fig2.layout.scene1.camera.eye = eye
+  fig2.layout.scene1.camera.center = center
+  fig2.layout.scene2.camera.eye = eye
+  fig2.layout.scene2.camera.center = center
+  fig2.layout.scene3.camera.eye = eye
+  fig2.layout.scene3.camera.center = center
+  fig2.layout.scene4.camera.eye = eye
+  fig2.layout.scene4.camera.center = center
+  fig2.layout.scene5.camera.eye = eye
+  fig2.layout.scene5.camera.center = center
+  fig2.layout.scene6.camera.eye = eye
+  fig2.layout.scene6.camera.center = center
+  fig2.layout.scene7.camera.eye = eye
+  fig2.layout.scene7.camera.center = center
+  fig2.layout.scene8.camera.eye = eye
+  fig2.layout.scene8.camera.center = center
+  fig2.layout.scene9.camera.eye = eye
+  fig2.layout.scene9.camera.center = center
 
   # fig2.layout.scene1.camera.eye = dict(x=1.7, y=0, z=0)
     
   fig.write_image(f'data/images/3D/{filename}.png')
   fig2.write_image(f'data/images/3D/{filename}_middle.png')
 
-  fig.show()
+  # fig.show()
   fig2.show()
 
 # Multi Bar Plot
