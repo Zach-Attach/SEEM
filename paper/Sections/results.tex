@@ -15,8 +15,8 @@ Comparing these networks can be done in several different ways. As an initial co
 \import{plots}{statTableL1}
 \import{plots}{statTableL5}  
 
-In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the enhanced connectome of \cite{White} (NOTE: N2U).
-It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 1). 
+In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the N2U connectome \citep{Durbin}.
+It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 2). 
 \import{plots}{statViolin}
 \import{plots}{degreeDist}
 \import{plots}{distDist}
@@ -36,7 +36,7 @@ We had two questions:
 1) What is the structural makeup of these networks? (Are they scale-free, small-world, etc.?) 
 2) What is the physical makeup of these networks?
 
-To answer these questions, we compared the degree distributions of these networks to examine their network structure and the distance distributions of these networks to examine their physical structure (see fig 2). 
+To answer these questions, we compared the degree distributions of these networks to examine their network structure (see fig 3) and the distance distributions of these networks to examine their physical structure (see fig 4). 
 To get a better idea of how similar these distributions were, we also measured their Wasserstein Distances from the \ce distribution. 
 For the adults, these distributions were averaged.
 
@@ -46,7 +46,7 @@ For the adults, these distributions were averaged.
 \import{plots}{spatialFront}
 
 \subsection{Spatial Embedding} % TODO
-Examining the makeup in Euclidean space, we observe varying connection patterns between each model. 
+Examining the makeup in Euclidean space, we observe varying connection patterns between each model (see fig 5). 
 Our random examples, ERN and REEM, show to not appear to have any skewed distribution in their preferred connections. 
 On the other hand, our model (SEEM) and RDDAM paint a different picture. 
 SEEM appears to prefer connections that do not span the center (pharynx). 
@@ -55,7 +55,7 @@ From these observations, \ce frontal ganglia forms connections around the entire
 Given that our model is unable to ``wrap'' around the pharynx, such a result is unsurprising.
 
 \subsection{Overlaps} % TODO
-Looking at the edges shared by the models and \ce, we find that none of the models' resulting networks contain a significant portion of the edges found in \ce. 
+Looking at the edges shared by the models and \ce, we find that none of the models' resulting networks contain a significant portion of the edges found in \ce (see fig 6). 
 These results are unsurprising given the results of their average connectivity and their spatial embedding.
 In spite of the network similarities that SEEM has in common with the \ce frontal ganglia, it is not an accurate approximation of it.
 
