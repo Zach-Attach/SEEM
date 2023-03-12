@@ -1,11 +1,4 @@
 \section{Results}
-% \subsection{NOTES}
-% The Results section is what needs the most work. It’s not clear yet what the Results are and what we are learning from them. If there are three or four sections to the Results — each section should be clearly titled.  I see a table and three figures — are each of those meant to be one of the sections of the Results? 
-% Each figure should have a caption. The caption should start with a title: what is it about, the big picture. Then the details of what it is that we are looking at. The text in the section that corresponds to it should dive deeper. Each section should answer four questions:
-% 1. Why are we doing this specific experiment. 
-% 2. What is the experiment and how are we going about it. 
-% 3. What is the observation of the results in detail.
-% 4. What is the interpretation, what do we take away from the experiment. 
 
 To answer the question of whether spatially embedding edges is an important factor in the formation of the \ce Neural Network (CENN), we compared networks from our initial model (SEEM) with \ce. 
 We wanted to minimize the number of assumptions made in the model. 
@@ -16,20 +9,17 @@ We also compared these networks with the Random Distance Dependent Attachment Mo
 To rule out development as a factor, we made comparisons to both a single L1 connectome ($\sim 0$ hours) and a set of 3 adult (L5) connectomes. 
 We measured these generative network models from a set of 100.
 
-\import{plots}{statTableL1}
-\import{plots}{statTableL5}
-
 \subsection{Network Statistics}
 Comparing these networks can be done in several different ways. As an initial comparison, we chose to use network statistics to compare essential aspects of these graphs. We chose to compare the average clustering coefficient, average edge distance, average connectivity, and average total number of bidirectional links. These network statistics were chosen as they were used by \cite{Itzhack} in their paper on the RDDAM, providing an initial point of comparison with previous work. We plotted the results of the network measures of all 100 instances of each model (see fig 2) and compared them with the results of these measures on the CENN. For the newborn (L1), we compared it to a single graph, but, for the adults (L5), this was three graphs.
 
-% 3. What is the observation of the results in detail.
-% 4. What is the interpretation, what do we take away from the experiment.  
-\import{plots}{statViolin}
-\import{plots}{degreeDist}
-\import{plots}{distDist}
+\import{plots}{statTableL1}
+\import{plots}{statTableL5}  
 
 In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the enhanced connectome of \cite{White} (NOTE: N2U).
 It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 1). 
+\import{plots}{statViolin}
+\import{plots}{degreeDist}
+\import{plots}{distDist}
 
 \import{Sections/results/stats}{clustering}
 \import{Sections/results/stats}{distance}

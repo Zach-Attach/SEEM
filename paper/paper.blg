@@ -3,37 +3,36 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
 The style file: apalike.bst
 Database file #1: citations.bib
-Warning--empty journal in WormAtlas2009
 You've used 24 entries,
             1935 wiz_defined-function locations,
             648 strings with 9377 characters,
-and the built_in function-call counts, 11722 in all, are:
+and the built_in function-call counts, 11694 in all, are:
 = -- 1060
 > -- 747
 < -- 12
 + -- 282
 - -- 272
-* -- 1092
-:= -- 2084
+* -- 1089
+:= -- 2081
 add.period$ -- 70
 call.type$ -- 24
 change.case$ -- 256
 chr.to.int$ -- 24
-cite$ -- 25
-duplicate$ -- 367
-empty$ -- 651
+cite$ -- 24
+duplicate$ -- 364
+empty$ -- 646
 format.name$ -- 306
-if$ -- 2228
+if$ -- 2222
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 23
+missing$ -- 22
 newline$ -- 121
 num.names$ -- 72
-pop$ -- 212
+pop$ -- 209
 preamble$ -- 1
 purify$ -- 256
 quote$ -- 0
-skip$ -- 307
+skip$ -- 305
 stack$ -- 0
 substring$ -- 647
 swap$ -- 62
@@ -41,8 +40,7 @@ text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 144
-warning$ -- 1
+warning$ -- 0
 while$ -- 67
 width$ -- 0
 write$ -- 306
-(There was 1 warning)
