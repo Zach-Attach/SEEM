@@ -2,10 +2,9 @@
 
 To answer the question of whether spatially embedding edges is an important factor in the formation of the \ce Neural Network (CENN), we compared networks from our initial model (SEEM) with \ce. 
 We wanted to minimize the number of assumptions made in the model. 
-Our assumptions in the model are the maximimum connecting distance between two neurites $\varepsilon$ is $3 \mu m$, that the filling fraction does not vary between any two neurons, and that neurites form in straight lines angled towards their "penpal" (see \textit{Methods}).
+Our assumptions in the model are the maximum connecting distance between two neurites $\varepsilon$ is $3 \mu m$, that the filling fraction does not vary between any two neurons, and that neurites form in straight lines angled towards their "penpal" (see \textit{Methods}).
 To account for the last assumption, we compared these results with a random direction version of our model (REEM). 
-We also compared these networks with the Random Distance Dependent Attachment Model (RDDAM) from \cite{Itzhack} and a set of random networks (Erdos-Renyi Networks / ERN) to gauge how close our model is to the \ce network. 
-% TODO: Explain what L1 and L5 are
+We also compared these networks with the Random Distance Dependent Attachment Model (RDDAM) from \cite{Itzhack} and a set of random networks (\er networks / ERN) to gauge how close our model is to the \ce network. 
 To rule out development as a factor, we made comparisons to both a single L1 connectome ($\sim 0$ hours) and a set of 3 adult (L5) connectomes. 
 We measured these generative network models from a set of 100.
 
@@ -16,12 +15,12 @@ Comparing these networks can be done in several different ways. As an initial co
 \import{plots}{statTableL5}  
 
 In general, there were not many significant differences between the results of L1 and L5 networks. One difference of interest was that the networks of \cite{Witvliet} had noticeably different clustering coefficients and total number of bidirectional links when compared with the N2U connectome \citep{Durbin}.
-It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 2). 
+It is difficult to determine what might be causing this discrepancy, whether it is a result of different environmental conditions or if this is indicative of flaws in the recording methods of some or all of the connectomes. Rather than averaging the results of the connectomes, we chose to show all three individually (see fig 2). 
+\import{Sections/results/stats}{clustering}
 \import{plots}{statViolin}
 \import{plots}{degreeDist}
 \import{plots}{distDist}
 
-\import{Sections/results/stats}{clustering}
 \import{Sections/results/stats}{distance}
 
 \import{Sections/results/stats}{connectivity}
@@ -45,18 +44,18 @@ For the adults, these distributions were averaged.
 
 \import{plots}{spatialFront}
 
-\subsection{Spatial Embedding} % TODO
+\subsection{Spatial Embedding}
 Examining the makeup in Euclidean space, we observe varying connection patterns between each model (see fig 5). 
-Our random examples, ERN and REEM, show to not appear to have any skewed distribution in their preferred connections. 
+Our random examples, ERN and REEM, appear to not have any skewed distribution in their preferred connections. 
 On the other hand, our model (SEEM) and RDDAM paint a different picture. 
 SEEM appears to prefer connections that do not span the center (pharynx). 
 RDDAM appears to have connections mostly localized to the most clustered areas.
-From these observations, \ce frontal ganglia forms connections around the entire pharynx more often than our model would expect.
+From these observations, the \ce frontal ganglia form connections around the entire pharynx more often than our model would expect.
 Given that our model is unable to ``wrap'' around the pharynx, such a result is unsurprising.
 
-\subsection{Overlaps} % TODO
+\subsection{Overlaps}
 Looking at the edges shared by the models and \ce, we find that none of the models' resulting networks contain a significant portion of the edges found in \ce (see fig 6). 
 These results are unsurprising given the results of their average connectivity and their spatial embedding.
-In spite of the network similarities that SEEM has in common with the \ce frontal ganglia, it is not an accurate approximation of it.
+Despite the network similarities that SEEM has in common with the \ce frontal ganglia, it is not an accurate approximation of it.
 
 \import{plots}{overlaps}

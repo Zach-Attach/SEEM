@@ -832,6 +832,13 @@ INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
 INPUT ../data/spreadsheets/dataL5.tex
+INPUT ./Sections/results/stats/clustering.tex
+INPUT ./Sections/results/stats/clustering.tex
+INPUT ./Sections/results/stats/clustering.tex
+INPUT Sections/results/stats/clustering.tex
+INPUT ./Sections/results/stats/clustering.tex
+INPUT ./Sections/results/stats/clustering.tex
+INPUT Sections/results/stats/clustering.tex
 INPUT ./plots/statViolin.tex
 INPUT ./plots/statViolin.tex
 INPUT ./plots/statViolin.tex
@@ -884,13 +891,6 @@ INPUT ../data/images/distributions/distDist_L5_line.pgf
 INPUT ../data/images/distributions/distDist_L5_line.pgf
 INPUT ../data/images/distributions/distDist_L5_line.pgf
 INPUT ../data/images/distributions/distDist_L5_line.pgf
-INPUT ./Sections/results/stats/clustering.tex
-INPUT ./Sections/results/stats/clustering.tex
-INPUT ./Sections/results/stats/clustering.tex
-INPUT Sections/results/stats/clustering.tex
-INPUT ./Sections/results/stats/clustering.tex
-INPUT ./Sections/results/stats/clustering.tex
-INPUT Sections/results/stats/clustering.tex
 INPUT ./Sections/results/stats/distance.tex
 INPUT ./Sections/results/stats/distance.tex
 INPUT ./Sections/results/stats/distance.tex
@@ -994,6 +994,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb

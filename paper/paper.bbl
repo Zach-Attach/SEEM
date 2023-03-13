@@ -20,8 +20,8 @@ Betzel, R.~F. and Bassett, D.~S. (2017).
 \newblock {\em J R Soc Interface}, 14(136).
 
 \bibitem[Ceylan et~al., 2022]{Ceylan}
-Ceylan, M.~E., Yertutanol, F. D.~K., Dönmez, A., Öz, P., Ünsalver, B.~O.,
-  and Evrensel, A. (2022).
+Ceylan, M.~E., Yertutanol, F. D.~K., Dönmez, A., Öz, P., Ünsalver,
+  B.~{\"{O}}., and Evrensel, A. (2022).
 \newblock Connectome or collectome? a neurophilosophical perspective.
 \newblock {\em Integrative Psychological and Behavioral Science},
   56(1):266--279.
@@ -36,6 +36,11 @@ Costa, L.~F., Kaiser, M., and Hilgetag, C.~C. (2007).
 Durbin, R.~M. (1987).
 \newblock Studies on the development and organisation of the nervous system of
   \textit{Caenorhabditis elegans}.
+
+\bibitem[Erd{\H{o}}s et~al., 1960]{Erdos}
+Erd{\H{o}}s, P., R{\'e}nyi, A., et~al. (1960).
+\newblock On the evolution of random graphs.
+\newblock {\em Publ. Math. Inst. Hung. Acad. Sci}, 5(1):17--60.
 
 \bibitem[Hentschel and Ooyen, 2000]{Hentschel}
 Hentschel, H. and Ooyen, A. (2000).
@@ -156,7 +161,7 @@ Witvliet, D., Mulcahy, B., Mitchell, J.~K., Meirovitch, Y., Berger, D.~R., Wu,
   Shavit, N., Chisholm, A.~D., Lichtman, J.~W., Samuel, A. D.~T., and Zhen, M.
   (2021).
 \newblock Connectomes across development reveal principles of brain maturation.
-\newblock {\em bioRxiv}, page 2020.04.30.066209.
+\newblock {\em Nature}, 596(7871):257--261.
 
 \bibitem[WormAtlas, 2009]{WormAtlas2009}
 WormAtlas (2009).

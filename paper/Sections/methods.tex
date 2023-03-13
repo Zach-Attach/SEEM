@@ -2,16 +2,16 @@
 
 \import{plots}{seemMethod}
 
-We sought to understand how spatial embedding of neurites might explain the neural organizational structure of \ce. 
-We developed a model to create sets of networks which attempt to recreate the process of neurite growth and synapse formation in Euclidean space. 
-Our aim with this model is examine how neurites impact the structure of a network while keeping the number of assumptions to as few as possible.
+We sought to understand how the spatial embedding of neurites might explain the neural organizational structure of \ce. 
+We developed a model to create sets of networks that attempt to recreate the process of neurite growth and synapse formation in Euclidean space. 
+% USE IT MORE maybe in the intro and in the discussion
+Our aim with this model is to examine how neurites impact the structure of a network while keeping the number of assumptions to as few as possible.
 
 \subsection{Data}
 The length and organization of neural processes in \ce are highly variable, particularly in the pharyngeal nervous system. 
-To simplify this, this research focused on the neurons in the frontal ganglia, whose length in connections are less variable. 
+To simplify this, this research focused on the neurons in the frontal ganglia, due to the length of their connections being less variable. 
 
-% TODO: Explain what L1 and L5 are
-The synaptic connections of a single L1 ($\sim 0$ hours) and two adult/L5 \ce were acquired from \cite{Witvliet}.
+The synaptic connections of a single newborn/L1 ($\sim 0$ hours old) and two adult/L5 \ce were acquired from \cite{Witvliet}.
 A third adult/L5 connectome was acquired from \cite{Durbin}'s N2U, an updated version of the original \cite{White} connectome. 
 3D positions of the neurons were taken from \cite{Skuhersky}. 
 
@@ -22,17 +22,17 @@ Doing so allows us to better understand how spatial embedding of neurites alone 
 
 This model will be referred to as the Spatially Embedded Edge Model (SEEM). 
 SEEM iterates over every node. 
-Each node locates the node closest to it that is on the opposite side of the nerve ring, a region which contains more than half of all neural processes \citep{Altun}. 
+Each node locates the node closest to it that is on the opposite side of the nerve ring, a region that contains more than half of all neural processes \citep{Altun}. 
 We refer to these target nodes as the source node's ``penpal.''
 A line segment is drawn from the source node through the target node, terminating at the surface of the bounding box of the network (see fig 1). 
 The bounding box is defined as the smallest 3D box that can hold all nodes in the network. 
 These line segments are intended to represent a single neurite. 
 Since most neurons in \ce only have 1-2 neurites, we chose for each neuron to exhibit a single neurite in our model.
 
-After all ``neurites'' have been drawn, the minimum distance between any two line segments are recorded. 
+After all ``neurites'' have been drawn, the minimum distance between any two line segments is recorded. 
 Given these neurons have a diameter of 2-3 microns \citep{Schafer}, a distance less than or equal to 3 microns ($\varepsilon$) between any two lines will be considered an overlap. 
 All possible edges in the model have now been determined. 
-To generate a network, a random selection of directed edges are selected from the set of all possible edges. 
+To generate a network, a random selection of directed edges is selected from the set of all possible edges. 
 The number of edges selected can be adjusted. 
 For these experiments, we used as many edges as were in the comparable \ce neuronal network. 
 The code for this algorithm can be found at the link listed under \textit{Data and Code Availability}.
@@ -47,30 +47,30 @@ This model can explain our algorithm for determining neurite direction influence
 
 \subsection{Networks for Comparison}
 In addition to our models, we chose two other sets of networks to compare. 
-The first are a set of networks resulting from the Random Distance Dependent Model (RDDAM) from \cite{Itzhack}. 
-This network will allow us to see the role of distance between soma alone plays in the network structure.
-This model determines whether or not to form a connection with the probability function $p(i \rightarrow j)= c(d)^{- \alpha }$. 
+The first is a set of networks resulting from the Random Distance Dependent Model (RDDAM) from \cite{Itzhack}. 
+This network will allow us to see the role that distance between soma alone plays in the network structure.
+This model determines whether or not to form a connection with the probability function $p(i \rightarrow j)= c(d)^{- \alpha}$. 
 Keeping in line with the original implementation, we kept $\alpha$ to 2.5 and adjusted $c$ so that the resulting number of connections would roughly match the number in the compared \ce frontal ganglia.
 
-The second set of networks chosen for comparison are a set of random networks. 
-We determined the Erdos-Renyi random network (ERN) to be a suitable random network for our analyses.
+The second set of networks chosen for comparison is a set of random networks. 
+We determined the \er random network (ERN) to be a suitable random network for our analyses.
+This network is one where a given number of nodes are connected with a given number of randomly-assigned edges \citep{Erdos}.
 These random networks will allow us to understand what results are a result of chance and what results are meaningful.
 
 \subsection{Network Comparison Methods}
-
 We compared the four chosen \ce connectomes with the resulting networks of our model, the Spatially Embedded Edge Model (SEEM). 
 To better assess the insights from our model, we also compare the results from a model from the literature, the Random Distance Dependent Attachment Model (RDDAM), and with two null models: the Randomly Embedded Edge Model (REEM), and a set of Erdos-Renyi networks (ERN).
 For each connectome, each model was run for 100 iterations, resulting in 100 possible graphs. 
 Each metric was run over every instance of the graph and the average value was recorded. 
 
-To compare these networks, we selected four distinct graph-theoretic properties: the average clusting coefficient, the average edge distance, the average connectivity, and the total number of bidirectional links. 
+To compare these networks, we selected four distinct graph-theoretic properties: the average clustering coefficient, the average edge distance, the average connectivity, and the total number of bidirectional links. 
 These measures are useful means of understanding the general structure of the networks in question and were used when comparing the RDDAM to \ce \citep{Itzhack}.
 
-The clustering coefficient measures number of instances where two neighbors of a node are connected divided by the total number of instances possible ($k(i)(k(i)-1)$ in a directed graph where k(i) is the degree of node i). 
+The clustering coefficient measures the number of instances where two neighbors of a node are connected divided by the total number of instances possible ($k(i)(k(i)-1)$ in a directed graph where k(i) is the degree of node i). 
 As the name suggests, it helps us to understand how clustered a network is and get a better idea of how interconnected all nodes in the network are on average. 
 
 The average edge distance measures the average length of each link/edge in Euclidean space. 
-Given that many of these model account for Euclidean space when forming connections, this measure is relevant. 
+Given that many of these models account for Euclidean space when forming connections, this measure is relevant. 
 It gives us an idea of how long these connections are, providing a simple understanding of how these networks compare with \ce. 
 
 The average connectivity measures the average local connectivity between all pairs of nodes in the network.
@@ -79,7 +79,7 @@ The average connectivity of the network can provide us with an idea of the netwo
 metabolic efficiency and its resilience to perturbation.
 
 The total number of bidirectional edges is the number of instances where two nodes are connected to each other in a directed graph.
-When comparing graphs with similar number of edges, this property can help us to understand if nodes prefer to connect with their neighbors.
+When comparing graphs with a similar number of edges, this property can help us to understand if nodes prefer to connect with their neighbors.
 A large number of bidirectional edges can also indicate a large amount of symmetry in the network.
 
 For a better understanding of how these networks are distributed, we compared two distributions for all networks: degree distribution and edge distance distribution. 
