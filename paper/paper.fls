@@ -1,8 +1,8 @@
-PWD /Users/zyle/Code/SEEM/paper
+PWD /Users/zlaborde/Code/public/SEEM/paper
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/zyle/Code/SEEM/paper/paper.tex
+INPUT /Users/zlaborde/Code/public/SEEM/paper/paper.tex
 OUTPUT paper.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -977,6 +977,18 @@ INPUT Sections/dataAndCodeAvailability.tex
 INPUT ./Sections/dataAndCodeAvailability.tex
 INPUT ./Sections/dataAndCodeAvailability.tex
 INPUT Sections/dataAndCodeAvailability.tex
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmtt10.tfm
+INPUT ./Sections/acknowledgements.tex
+INPUT ./Sections/acknowledgements.tex
+INPUT ./Sections/acknowledgements.tex
+INPUT Sections/acknowledgements.tex
+INPUT ./Sections/acknowledgements.tex
+INPUT ./Sections/acknowledgements.tex
+INPUT Sections/acknowledgements.tex
 INPUT ./paper.bbl
 INPUT paper.bbl
 INPUT ./paper.bbl
@@ -984,6 +996,7 @@ INPUT paper.bbl
 INPUT paper.aux
 INPUT ./paper.out
 INPUT ./paper.out
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
@@ -1003,3 +1016,4 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss9.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy7.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb

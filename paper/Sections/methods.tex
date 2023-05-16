@@ -4,7 +4,7 @@
 
 We sought to understand how the spatial embedding of neurites might explain the neural organizational structure of \ce. 
 We developed a model to create sets of networks that attempt to recreate the process of neurite growth and synapse formation in Euclidean space. 
-% USE IT MORE maybe in the intro and in the discussion
+Although not biologically precise, this model serves as a tool to analyze the structure of the \ce neuronal network.
 Our aim with this model is to examine how neurites impact the structure of a network while keeping the number of assumptions to as few as possible.
 
 \subsection{Data}
@@ -39,11 +39,11 @@ The code for this algorithm can be found at the link listed under \textit{Data a
 
 \subsection{Additional Model}
 
-Our model assumes a particular directionality of its neurons.
+Our model assumes a particular algorithm for determining the direction in which its neurites extend.
 To account for what effects this assumption might have on the results, we created a second model for comparison. 
 The Randomly Embedded Edge Model (REEM) is created in the same way as our other model (SEEM) with one key difference. 
 Rather than passing through the closest neuron opposite of the nerve ring, this model's neurites form in random directions.
-This model can explain our algorithm for determining neurite direction influences the results.
+This model can explain our algorithm for determining how neurite direction influences the results.
 
 \subsection{Networks for Comparison}
 In addition to our models, we chose two other sets of networks to compare. 
@@ -66,15 +66,15 @@ Each metric was run over every instance of the graph and the average value was r
 To compare these networks, we selected four distinct graph-theoretic properties: the average clustering coefficient, the average edge distance, the average connectivity, and the total number of bidirectional links. 
 These measures are useful means of understanding the general structure of the networks in question and were used when comparing the RDDAM to \ce \citep{Itzhack}.
 
-The clustering coefficient measures the number of instances where two neighbors of a node are connected divided by the total number of instances possible ($k(i)(k(i)-1)$ in a directed graph where k(i) is the degree of node i). 
+The clustering coefficient measures the number of instances where two neighbors of a node are connected divided by the total number of instances possible ($k(i)(k(i)-1)$ in a directed graph where k(i) is the degree of node i) \citep{Watts}. 
 As the name suggests, it helps us to understand how clustered a network is and get a better idea of how interconnected all nodes in the network are on average. 
 
 The average edge distance measures the average length of each link/edge in Euclidean space. 
 Given that many of these models account for Euclidean space when forming connections, this measure is relevant. 
 It gives us an idea of how long these connections are, providing a simple understanding of how these networks compare with \ce. 
 
-The average connectivity measures the average local connectivity between all pairs of nodes in the network.
-Local connectivity is defined as the minimum number of nodes needed to be pruned to result in no paths connecting a pair of neurons, resulting in 2 or more connected components.
+The average connectivity measures the average local node connectivity between all pairs of nodes in the network.
+Local connectivity is defined as the minimum number of nodes needed to be pruned to result in no paths connecting a pair of neurons, resulting in 2 or more connected components \citep{Esfahanian}.
 The average connectivity of the network can provide us with an idea of the network's redundancy, which can coincide with its
 metabolic efficiency and its resilience to perturbation.
 

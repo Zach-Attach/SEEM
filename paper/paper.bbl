@@ -42,6 +42,11 @@ Erd{\H{o}}s, P., R{\'e}nyi, A., et~al. (1960).
 \newblock On the evolution of random graphs.
 \newblock {\em Publ. Math. Inst. Hung. Acad. Sci}, 5(1):17--60.
 
+\bibitem[Esfahanian, 2013]{Esfahanian}
+Esfahanian, A.-H. (2013).
+\newblock Connectivity algorithms.
+\newblock {\em Topics in structural graph theory}, pages 268--281.
+
 \bibitem[Hentschel and Ooyen, 2000]{Hentschel}
 Hentschel, H. and Ooyen, A. (2000).
 \newblock Dynamic mechanisms for bundling and guidance during neural network
@@ -139,6 +144,11 @@ Veraszt{\'o}, C., Jasek, S., G{\"u}hmann, M., Shahidi, R., Ueda, N., Beard,
 \newblock Whole-animal connectome and cell-type complement of the
   three-segmented platynereis dumerilii larva.
 \newblock {\em bioRxiv}.
+
+\bibitem[Watts and Strogatz, 1998]{Watts}
+Watts, D.~J. and Strogatz, S.~H. (1998).
+\newblock Collective dynamics of 'small-world' networks.
+\newblock {\em nature}, 393(6684):440--442.
 
 \bibitem[White et~al., 1986]{White}
 White, J.~G., Southgate, E., Thomson, J.~N., and Brenner, S. (1986).
