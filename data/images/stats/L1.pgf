@@ -743,7 +743,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.562220in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.05}%
+\pgftext[x=0.562220in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.05}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -768,7 +768,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.957109in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.10}%
+\pgftext[x=0.957109in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.10}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -793,7 +793,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.351999in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.15}%
+\pgftext[x=1.351999in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.15}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -818,7 +818,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.223626in, y=3.499951in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont SEEM}%
+\pgftext[x=-0.223626in, y=3.499951in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont SEEM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -843,7 +843,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.348992in, y=3.858925in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
+\pgftext[x=-0.348992in, y=3.858925in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -868,13 +868,13 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.137811in, y=4.217899in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont ERN}%
+\pgftext[x=-0.137811in, y=4.217899in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont ERN}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.404548in,y=3.906410in,,bottom,rotate=90.000000]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Clustering Coefficient}%
+\pgftext[x=-0.404548in,y=3.906410in,,bottom,rotate=90.000000]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Clustering Coefficient}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{3.412821in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -1745,7 +1745,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.631871in,y=1.884188in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 10}%
+\pgftext[x=0.631871in,y=1.884188in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 10}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1770,7 +1770,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.491247in,y=1.884188in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 20}%
+\pgftext[x=1.491247in,y=1.884188in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 20}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1795,7 +1795,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.223626in, y=2.068540in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont SEEM}%
+\pgftext[x=-0.223626in, y=2.068540in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont SEEM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1820,7 +1820,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.348992in, y=2.427515in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
+\pgftext[x=-0.348992in, y=2.427515in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1845,13 +1845,13 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.137811in, y=2.786489in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont ERN}%
+\pgftext[x=-0.137811in, y=2.786489in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont ERN}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.404548in,y=2.475000in,,bottom,rotate=90.000000]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Edge Distance (µm)}%
+\pgftext[x=-0.404548in,y=2.475000in,,bottom,rotate=90.000000]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Edge Distance (µm)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{1.981410in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -2722,7 +2722,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.280398in,y=0.452778in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0}%
+\pgftext[x=0.280398in,y=0.452778in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2747,7 +2747,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.896875in,y=0.452778in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 50}%
+\pgftext[x=0.896875in,y=0.452778in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 50}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2772,7 +2772,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.513352in,y=0.452778in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 100}%
+\pgftext[x=1.513352in,y=0.452778in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 100}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2797,7 +2797,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.223626in, y=0.637130in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont SEEM}%
+\pgftext[x=-0.223626in, y=0.637130in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont SEEM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2822,7 +2822,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.348992in, y=0.996104in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
+\pgftext[x=-0.348992in, y=0.996104in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont RDDAM}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2847,13 +2847,13 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.137811in, y=1.355079in, left, base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont ERN}%
+\pgftext[x=-0.137811in, y=1.355079in, left, base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont ERN}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=-0.404548in,y=1.043590in,,bottom,rotate=90.000000]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Bidirectional Links}%
+\pgftext[x=-0.404548in,y=1.043590in,,bottom,rotate=90.000000]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Bidirectional Links}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{0.550000in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -3033,7 +3033,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.875000in,y=4.900000in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont L1}%
+\pgftext[x=0.875000in,y=4.900000in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont L1}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
