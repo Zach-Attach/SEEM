@@ -20,8 +20,8 @@ Betzel, R.~F. and Bassett, D.~S. (2017).
 \newblock {\em J R Soc Interface}, 14(136).
 
 \bibitem[Ceylan et~al., 2022]{Ceylan}
-Ceylan, M.~E., Yertutanol, F. D.~K., Dönmez, A., Öz, P., Ünsalver,
-  B.~{\"{O}}., and Evrensel, A. (2022).
+Ceylan, M.~E., Yertutanol, F. D.~K., D{\"{o}}nmez, A., {\"{O}}z, P.,
+  {\"{U}}nsalver, B.~{\"{O}}., and Evrensel, A. (2022).
 \newblock Connectome or collectome? a neurophilosophical perspective.
 \newblock {\em Integrative Psychological and Behavioral Science},
   56(1):266--279.
@@ -62,7 +62,7 @@ Itzhack, R. and Louzoun, Y. (2010).
 \bibitem[Izquierdo, 2019]{Izquierdo}
 Izquierdo, E.~J. (2019).
 \newblock Role of simulation models in understanding the generation of behavior
-  in \textit{C. elegans}.
+  in \textit{C. elegans}.
 \newblock {\em Current Opinion in Systems Biology}, 13:93--101.
 
 \bibitem[Kaiser and Hilgetag, 2006]{Kaiser}
@@ -85,17 +85,17 @@ Nicosia, V., Vértes, P.~E., Schafer, W.~R., Latora, V., and Bullmore, E.~T.
 \newblock {\em Proceedings of the National Academy of Sciences},
   110(19):7880--7885.
 
-\bibitem[Prinz et~al., 2004]{Prinz}
-Prinz, A.~A., Bucher, D., and Marder, E. (2004).
-\newblock Similar network activity from disparate circuit parameters.
-\newblock {\em Nature Neuroscience}, 7(12):1345--1352.
-
-\bibitem[Pérez-Escudero and Polavieja, 2007]{PerezEscudero}
-Pérez-Escudero, A. and Polavieja, G. G.~d. (2007).
+\bibitem[P{\'{e}}rez-Escudero and Polavieja, 2007]{PerezEscudero}
+P{\'{e}}rez-Escudero, A. and Polavieja, G. G.~d. (2007).
 \newblock Optimally wired subnetwork determines neuroanatomy of
   \textit{Caenorhabditis elegans}.
 \newblock {\em Proceedings of the National Academy of Sciences},
   104(43):17180--17185.
+
+\bibitem[Prinz et~al., 2004]{Prinz}
+Prinz, A.~A., Bucher, D., and Marder, E. (2004).
+\newblock Similar network activity from disparate circuit parameters.
+\newblock {\em Nature Neuroscience}, 7(12):1345--1352.
 
 \bibitem[Rheault et~al., 2020]{Rheault}
 Rheault, F., Poulin, P., Valcourt~Caron, A., St-Onge, E., and Descoteaux, M.
@@ -122,8 +122,8 @@ Skuhersky, M., Wu, T., Yemini, E., Nejatbakhsh, A., Boyden, E., and Tegmark, M.
 \newblock {\em BMC Bioinformatics}, 23(1):195.
 
 \bibitem[Towlson et~al., 2013]{Towlson}
-Towlson, E.~K., V{\'e}rtes, P.~E., Ahnert, S.~E., Schafer, W.~R., and Bullmore,
-  E.~T. (2013).
+Towlson, E.~K., V{\'{e}}rtes, P.~E., Ahnert, S.~E., Schafer, W.~R., and
+  Bullmore, E.~T. (2013).
 \newblock The rich club of the c. elegans neuronal connectome.
 \newblock {\em Journal of Neuroscience}, 33(15):6380--6387.
 

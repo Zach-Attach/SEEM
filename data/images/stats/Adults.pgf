@@ -743,7 +743,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.572082in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.1}%
+\pgftext[x=0.572082in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.1}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -768,7 +768,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.066168in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.2}%
+\pgftext[x=1.066168in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.2}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -793,7 +793,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.560253in,y=3.315598in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0.3}%
+\pgftext[x=1.560253in,y=3.315598in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0.3}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{3.412821in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -999,7 +999,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.218750in,y=4.483333in,left,base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Clustering Coefficient}%
+\pgftext[x=0.218750in,y=4.483333in,left,base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Clustering Coefficient}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1696,7 +1696,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.589489in,y=1.884188in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 10}%
+\pgftext[x=0.589489in,y=1.884188in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 10}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1721,7 +1721,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.047024in,y=1.884188in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 15}%
+\pgftext[x=1.047024in,y=1.884188in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 15}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -1746,7 +1746,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.504559in,y=1.884188in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 20}%
+\pgftext[x=1.504559in,y=1.884188in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 20}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{1.981410in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -1952,7 +1952,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.218750in,y=3.051923in,left,base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Edge Distance (µm)}%
+\pgftext[x=0.218750in,y=3.051923in,left,base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Edge Distance (µm)}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2649,7 +2649,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.245058in,y=0.452778in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 0}%
+\pgftext[x=0.245058in,y=0.452778in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 0}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
@@ -2674,7 +2674,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=1.030380in,y=0.452778in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont 200}%
+\pgftext[x=1.030380in,y=0.452778in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont 200}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfpathrectangle{\pgfqpoint{0.218750in}{0.550000in}}{\pgfqpoint{1.356250in}{0.987179in}}%
@@ -2880,13 +2880,13 @@
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.218750in,y=1.620513in,left,base]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Bidirectional Links}%
+\pgftext[x=0.218750in,y=1.620513in,left,base]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Bidirectional Links}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{0.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=0.875000in,y=4.900000in,,top]{\color{textcolor}\sffamily\fontsize{9.000000}{10.800000}\selectfont Adults}%
+\pgftext[x=0.875000in,y=4.900000in,,top]{\color{textcolor}\fontsize{9.000000}{10.800000}\selectfont Adults}%
 \end{pgfscope}%
 \end{pgfpicture}%
 \makeatother%
