@@ -21,7 +21,9 @@ We cannot expect to understand the nature of \ce's connectomic structure from la
 
 Generative models are a promising method for understanding network formation and the parameter space where particular connectomes lie. 
 Generative network models create networks from a set of rules defining where and how connections are created \citep{Betzel}. 
-By focusing on how networks form and not on a complete list of nodes and edges, generative models can apply to many brains, not just a single instance of one. 
+By focusing on how networks form and not on a complete list of nodes and edges, generative models can apply to many brains, not just a single instance of one.
+ 
+\import{plots}{seemMethod}
 
 \cite{Itzhack} developed a generative model that produces networks similar to the \ce connectome in the average length of connections, average connectivity, and the total number of bidirectional links. 
 Their model (i.e. the Random Distance Dependent Attachment Model (RDDAM)) randomly forms connections with a probability that logarithmically decreases with an increase in spatial distance between two neurons, expressed as $p(i \rightarrow j)= c(d)^{-\alpha}$.
